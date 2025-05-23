@@ -5,7 +5,6 @@ import Buttontest from '../components/Buttontest'
 import Buttonai from '../components/Buttonai'
 import { Link } from 'react-router-dom'
 
-/*hello*/
 function Home() {
   return (
     <section id="frame1">
