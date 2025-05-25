@@ -12,7 +12,6 @@
     height: 770px;
     background: #FFFFFF;
     overflow: hidden;
-
 }
 
 .SkinstricP{
@@ -124,7 +123,6 @@
     color: #1A1B1C;
 }
 
-
 .Inside_auto_layout2{
     flex: none;
     order: 1;
@@ -218,22 +216,23 @@
     padding: 0px;
     gap: 10px;
     position: absolute;
-    width: 136px;
+    width: 200px;
     height: 44px;
     left: 87px;
     top: 360px;
 }
 
 .discoverai{
-    width: 82px;
+    width: 130px;
     height: 16px;
     font-style: normal;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 20px;
     line-height: 16px;
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #1A1B1C;
+    opacity: 0.7;
 }
 
 .Rectanglehandler, .Rectanglehandler2{    
@@ -301,12 +300,12 @@
 
 .Taketest{
     position: absolute;
-    width: 67px;
+    width: 99px;
     height: 16px;
-    left: -20px;
+    left: -50px;
     top: 7px;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 20px;
     line-height: 16px;
     letter-spacing: -0.02em;
     text-transform: uppercase;
@@ -341,7 +340,6 @@
     transform: rotate(-45deg);
 }
 
-
 .Rectangle13-r {        
     position: absolute;
     width: 15px;
@@ -351,7 +349,6 @@
     transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
 
 }
-
 
 .Polygon1-r {
     position: absolute;
@@ -364,10 +361,298 @@
     clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 
 }
-.slide {
+
+.start_analysis {   
+    position: absolute;
+    width: 227px;
+    height: 23px;
+    left: 105px;
+    top: 79px;    
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #1A1B1C;    
+}
+
+
+.rombuses {
+    position: absolute;
+    width: 495px;
+    height: 501px;
+    left: 532px;
+    top: 95px;
+    transform: rotate(-45deg);
 
 }
 
-.faded {
+.Rectangle18 {
+    position: absolute;
+    width: 300.78px;
+    height: 320.99px;
+    top: 30%;
+    left: 20%;
+    border: 2px dashed #A0A4AB;
+}
 
+
+.Rectangle10-2 {
+    position: absolute;
+    width: 404.78px;
+    height: 420.99px;
+    top: 20%;
+    left: 10%;
+    opacity: 0.6;
+    border: 2px dashed #A0A4AB;
+    border-radius: 0px;
+}
+
+.Rectangle17-2 {
+    position: absolute;
+    width: 504.78px;
+    height: 520.99px;
+    top: 10%;
+    left: 0%;
+    opacity: 0.3;
+    border: 2px dashed #A0A4AB;
+}
+
+.IntroduceYourself {   
+    width: 350px;
+    height: 56.67px;
+    left: 625px;
+    top: 359.33px;
+}
+
+.click_to_type1 {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #1A1B1C;   
+    opacity: 0.4;
+}
+
+.click_to_type2 {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #1A1B1C;
+    opacity: 0.4;
+}
+
+.yourname{    
+    position: absolute;
+    left: 39.05%;
+    right: 35.44%;
+    top: 45%;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 64px;
+    letter-spacing: -0.07em;
+    color: #1A1B1C;   
+}
+.yourcity {
+    position: absolute;
+    left: 38.19%;
+    right: 34.69%;
+    top: 45.7%;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: -0.07em;
+    color: #1A1B1C;
+}
+
+.Line1 {
+    position: absolute;
+    left: 39.4%;
+    right: 35.56%;
+    top: 53.9%;
+    bottom: 45.97%;
+    background: #1A1B1C;
+}
+
+.Line2 {
+    position: absolute;
+    left: 39%;
+    right: 35.35%;
+    top: 54.29%;
+    bottom: 45.58%;
+    background: #1A1B1C;
+}
+
+.input {
+  background: transparent;
+  border: none;
+  font-size: inherit;
+  width: 100%;
+  outline: none;
+  color: #1A1B1C;
+  text-align: center;
+}
+
+.Next{    
+    position: absolute;
+    left: 39%;
+    right: 36.44%;
+    top: 41%;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: -0.07em;
+    text-align: center;
+    color: #1A1B1C;   
+}
+
+.Loading {    
+    position: absolute;
+    left: 39%;
+    right: 36.5%;
+    top: 45%;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: -0.07em;
+    text-align: center;
+    color: #1A1B1C;   
+}
+
+.Auto_layout_back_button-icon-text-shrunk {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    position: absolute;
+    left: 100px;
+    top: 658px;
+}
+
+.Rectangle16-b {
+    box-sizing: border-box;
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    left: 0px;
+    top: 8px; 
+    border: 1px solid #1A1B1C;
+    transform: rotate(-45deg);   
+}
+    
+.Rectangle17-b {
+    box-sizing: border-box;
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    left: 0px;
+    top: 8px;    
+    border: 1px solid #1A1B1C;
+    transform: rotate(-45deg);
+}
+
+
+.Rectangle13-b {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 8px;
+    top: 16px;    
+    transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+}
+
+.Polygon2-b {
+    position: absolute;
+    width: 9.43px;
+    height: 10.89px;
+    left: 9px;
+    top: 18px;
+    background: #1A1B1C;
+    transform: rotate(-90deg);
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+
+}
+
+.Back {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;    
+    color: #1A1B1C;
+    opacity: 0.7;
+}
+
+.Auto_layout_proceed_button-icon-text-shrunk {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    position: absolute;
+    left: 1380px;
+    top: 656px;
+}
+
+.Rectangle16-p {
+    box-sizing: border-box;
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    top: 7px; 
+    border: 1px solid #1A1B1C;
+    transform: rotate(-45deg);
+}
+
+
+.Rectangle17-p {
+    box-sizing: border-box;
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    top: 7px;
+    border: 1px solid #1A1B1C;
+    transform: rotate(-45deg);
+}
+
+.Rectangle13-p {
+    box-sizing: border-box;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 103px;
+    top: 15px;
+    transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+}
+
+.Polygon2-p {
+    position: absolute;
+    width: 9.43px;
+    height: 10.89px;
+    left: 108px;
+    top: 17px;
+    background: #1A1B1C;
+    transform: rotate(90deg);
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.Proceed {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1A1B1C;
+  opacity: 0.7;
 }

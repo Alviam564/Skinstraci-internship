@@ -4,6 +4,11 @@ function Navbar() {
   return (
     <div className='Rectangle5'>
       <span className='Skinstric'>Skinstric</span>
+      <div className='button-code'>
+        <div className='Auto_layout_center_button-simple '>
+          <span className='Button_enter'>Enter Code</span>
+        </div>
+      </div>
       <div className='location'>
         <div className='Auto_layout_introplacer'>
           <div>
