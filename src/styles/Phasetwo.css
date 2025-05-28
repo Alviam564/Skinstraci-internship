@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {font-family: 'Roboto';
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#Frame9 {
+    position: relative;
+    width: 1600px;
+    height: 770px;
+    background: #FFFFFF;
+}
+
+.Scan {
+    position: absolute;
+    width: 493px;
+    height: 452.55px;
+    left: 217px;
+    top: 155.65px;
+}
+
+.rombuses-l {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    left: 10%;
+    top: 20%; 
+}
+    
+.Rectangle18-l, .Rectangle18-r{
+    position: absolute;
+    width: 148px;
+    height: 148px;
+    left: 32%;
+    top: 19%;
+    border: 2px dashed #A0A4AB;
+    transform: rotate(45deg);
+}
+
+.Rectangle10-l, .Rectangle10-r {
+    position: absolute;
+    width: 181px;
+    height: 181px;
+    left: 27%;
+    top: 14%;
+    opacity: 0.6;
+    border: 2px dashed #A0A4AB;
+    border-radius: 0px;
+    transform: rotate(45deg);
+}
+
+.Rectangle17-l, .Rectangle17-r {
+    position: absolute;
+    width: 213px;
+    height: 213px;
+    left: 22%;
+    top: 9%;
+    opacity: 0.3;
+    border: 2px dashed #A0A4AB;
+    transform: rotate(45deg);
+}
+    
+.line-l {
+    position: absolute;
+    width: 100px;
+    height: 93.34px;
+    left: 490px;
+    top: 255px;
+}
+    
+.image-l {
+    position: absolute;
+    width: 116px;
+    height: 116px;
+    left: 385px;
+    top: 322px;
+}
+
+.AccessScantext {
+    position: absolute;
+    width: 117px;
+    height: 40px;
+    left: 592px;
+    top: 248px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;   
+    color: #1A1B1C;
+}
+
+.Allowgallery {
+    position: absolute;
+    width: 497.55px;
+    height: 452.55px;
+    left: 750px;
+    top: 153.82px;
+}
+
+.image-r {
+    position: absolute;
+    width: 136px;
+    height: 136.88px;
+    left: 1000px;
+    top: 312px;
+}
+
+.AccessGallerytext {
+    position: absolute;
+    width: 127px;
+    height: 30px;
+    left: 795px;
+    top: 512px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #1A1B1C;
+}
+
+.line-r {
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    left: 925px;
+    top: 417px;
+}
+
+.rombuses-r {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    left: 136%;
+    top: 20%; 
+}
+
+.Gallery {
+    position: absolute;
+    width: 493px;
+    height: 452.55px;
+    left: 225px;
+    top: 155.65px;
+}
+
+.Preview {
+    position: absolute;
+    width: 128px;
+    height: 152px;
+    left: -28px;
+}
+
+.Preview-text {
+    position: absolute;
+    width: 54px;
+    height: 16px;
+    left: 1473px;
+    top: 138px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #1A1B1C;
+}
+
+.Preview-border {
+    box-sizing: border-box;
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 1436px;
+    top: 162px;
+    border: 1px solid #1A1B1C;
+}
+
+.Preview-img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 126px;
+    height: 126px;
+}

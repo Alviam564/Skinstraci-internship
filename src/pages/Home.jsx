@@ -15,12 +15,12 @@ function Home() {
       <div>
         <div className='Rectangle10' />
         <div className='Auto_layout_button-icon-text-shrunk'>
-        <div className='Rectanglehandler2'>
+        <div className='Rectanglehandler'>
           <div className='Inside_auto_layout1' />
-          <div className='Rectangle16-l' />
-          <div className='Rectangle17-l' />
-          <div className='Rectangle13-l' />
-          <div className='Polygon1-l' />
+          <div className='Rectangle16-L' />
+          <div className='Rectangle17-L' />
+          <div className='Rectangle13-L' />
+          <div className='Polygon1-L' />
         </div>
         <div>
           <div className='discoverai'>Discover A.I.</div>
@@ -34,12 +34,12 @@ function Home() {
           <div className='Auto_layout_center_button-icon-text-shrunk'>
           <div className='Taketest'>Take Test</div>
           <div className='Inside_auto_layou1' />
-            <div className='Rectanglehandler2'>
+            <div className='Rectanglehandler'>
               <div className='Inside_auto_layout2' />
-              <div className='Rectangle16-r' />
-              <div className='Rectangle17-r' />
-              <div className='Rectangle13-r' />
-              <div className='Polygon1-r' />
+              <div className='Rectangle16-R' />
+              <div className='Rectangle17-R' />
+              <div className='Rectangle13-R' />
+              <div className='Polygon1-R' />
             </div>
           </div>
         </Link>

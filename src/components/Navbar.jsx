@@ -1,9 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
     <div className='Rectangle5'>
-      <span className='Skinstric'>Skinstric</span>
+      <Link to="/">
+        <span className='Skinstric'>Skinstric</span>
+      </Link>
       <div className='button-code'>
         <div className='Auto_layout_center_button-simple '>
           <span className='Button_enter'>Enter Code</span>

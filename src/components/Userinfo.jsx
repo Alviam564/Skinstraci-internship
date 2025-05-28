@@ -14,7 +14,7 @@ const Userinfo = () => {
     e.preventDefault();
     if (!name) return;
 
-    localStorage.setItem('William Alvarez', name);
+    localStorage.setItem('yourname', name);
     setStep(2);
   };
 
@@ -22,7 +22,7 @@ const Userinfo = () => {
     e.preventDefault();
     if (!location) return;
 
-    localStorage.setItem('New York', location);
+    localStorage.setItem('yourlocation', location);
 
     setLoading(true);
     try {
@@ -37,7 +37,7 @@ const Userinfo = () => {
       setStep(3);
     }, 2000);
     } catch (err) {
-       console.error('Submission error:', err);
+      console.error('Submission error:', err);
     setLoading(false);
   }
 

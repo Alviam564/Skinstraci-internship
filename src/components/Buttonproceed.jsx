@@ -7,7 +7,7 @@ function Buttonproceed() {
         <div className='Proceed'>Proceed</div>
         <div className='Inside_auto_layout1' />
       </div>
-      <div className='Rectanglehandler2'>
+      <div className='Rectanglehandler'>
         <div className='Inside_auto_layou2' />
         <div className='Rectangle16-p' />
         <div className='Rectangle17-p' />
