@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {font-family: 'Roboto';
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Allowcamera {
+    position: absolute;
+    width: 497.55px;
+    height: 452.55px;
+    left: 750px;
+    top: 153.82px;
+}

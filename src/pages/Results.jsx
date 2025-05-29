@@ -4,10 +4,12 @@ import { useNavigate } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Buttonback from '../components/Buttonback'
 import UserGallery from '../components/UserGallery'
+import Demographic from '../components/Demographic'
 
 function Results() {
   const [preview, setPreview] = useState('');
   const [centerContent, setCenterContent] = useState('initial');
+  const [demographicData, setDemographicData] = useState();
   const navigate = useNavigate();
 
   const handleFileChange = async (e) => {
@@ -39,8 +41,9 @@ function Results() {
         console.log("API result:", result);
 
         if (result.success) {
+          setDemographicData(result.data)
           window.alert('Image analyzed successfully')
-          navigate('/select');
+          navigate('/select', { state: { demographicData: result.data } });
         } else {
           console.warn('Image analysis failed:', result.message)
           window.alert(`Analysis failed: ${result.message}`)
@@ -63,6 +66,7 @@ function Results() {
           {preview && <img className='Preview-img' src={preview} alt="Preview" />}
         </div>
       </div>
+      {demographicData && <Demographic demographicData={demographicData} />}
       <Link to="/">
         <Buttonback />
       </Link>

@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-#frame1{
+#frame1, #frame6{
     position: relative;
     width: 1600px;
     height: 770px;
@@ -616,7 +616,7 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    left: 103px;
+    left: 10px;
     top: 15px;
     transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
 }

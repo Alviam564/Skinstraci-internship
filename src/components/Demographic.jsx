@@ -1,0 +1,110 @@
+import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+
+function Demographic() {
+  const { state } = useLocation();
+  const demographicData = state?.demographicData || {};
+  const { age = {}, gender = {}, race = {} } = demographicData;
+
+  const [selectedCategory, setSelectedCategory] = useState('race');
+  const [selectedKey, setSelectedKey] = useState({
+    race: Object.keys(race)[0] || '',
+    age: Object.keys(age)[0] || '',
+    gender: Object.keys(gender)[0] || '',
+  });
+
+  const dataMap = { race, age, gender };
+  const selectedData = dataMap[selectedCategory];
+  const selectedValue = selectedData[selectedKey[selectedCategory]] ?? 0;
+
+  const formatPercentage = (val) => `${Math.round(val * 100)}%`;
+
+  const getTopEntryKey = (obj) => {
+  return Object.entries(obj).reduce((top, curr) => curr[1] > top[1] ? curr : top)[0]}
+
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category); 
+    const topKey = getTopEntryKey(dataMap[category])
+    setSelectedKey(prev => ({ ...prev, [category]: topKey }))
+  };
+
+  const handleOptionClick = (key) => {
+  setSelectedKey((prev) => ({
+    ...prev,
+    [selectedCategory]: key,
+  }));
+};
+
+  return (
+    <div className='Demographics_box'>
+      <div className='Analysis_results'>
+        {['race', 'age', 'gender'].map((category) => (
+          <div key={category} className={`${category}_results ${selectedCategory === category ? 'selected' : ''}`} onClick={() => handleCategoryClick(category)}>
+            <div className={`${category}_rectangle`}>
+              <div className={category}>{getTopEntryKey(dataMap[category])}</div>
+              <div className={`${category}_text`}>
+                {category.charAt(0).toUpperCase() + category.slice(1)}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className='Demographics_rectangle_results'>
+        <div className='Demographics_rectangle_box'></div>
+        <div className='Demographics_rectangle_title'>{selectedKey[selectedCategory]}</div>
+        <div className='Demographics_graph'>
+          <svg width="384" height="384" className="progress-ring">
+            <circle className="progress-ring__background" stroke="#C1C2C3" strokeWidth="6" fill="transparent" r="190" cx="192" cy="192"/>
+            <circle className="progress-ring__circle" stroke="#1A1B1C" strokeWidth="6" fill="transparent" r="190" cx="192" cy="192"
+              style={{
+                strokeDasharray: `${2 * Math.PI * 190}`,
+                strokeDashoffset: `${2 * Math.PI * 190 * (1 - selectedValue)}`,
+                transition: 'stroke-dashoffset 1s ease-out',
+              }}
+            />
+          </svg>
+          <div className='Graph'>
+            <div className='Demographics_graph_results '>
+              <div className='Demographics_graph_results_text'>
+                {formatPercentage(selectedValue)}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='confidance_results'>
+        <div className='confidance_box'>
+          <div className='confidance_tag_box'>
+            <div className='confidance_tag_rectangle'>
+              <div className='confidance_catagory'>{selectedCategory}</div>
+              <div className='aiConfidence_text'>a. i. confidence</div>
+            </div>
+            <div className='confidence_tag'>
+            {Object.entries(selectedData)
+            .sort(([a], [b]) => {
+              const getStart = (range) => parseInt(range.split('-')[0]) || 0;
+              return getStart(a) - getStart(b)
+            })
+            .map(([key, value]) => {
+              const isSelected = key === selectedKey[selectedCategory]
+              return (
+              <div key={key} className={`confidence-row ${isSelected ? 'selected' : ''}`} onClick={() => handleOptionClick(key)}>
+                <div>
+                  <img src={isSelected ? '/selected-button.png' :'/nonselected-button.png'} alt={isSelected ? 'selected' :'non selected'} />
+                  <span className='confidence_text'> {key}</span>
+                </div>
+                <span>{formatPercentage(value)}</span>
+              </div>
+              )
+            })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Demographic

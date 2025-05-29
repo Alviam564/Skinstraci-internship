@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-#Frame9 {
+#frame9, #frame12, #frame13 {
     position: relative;
     width: 1600px;
     height: 770px;
@@ -92,14 +92,6 @@
     color: #1A1B1C;
 }
 
-.Allowgallery {
-    position: absolute;
-    width: 497.55px;
-    height: 452.55px;
-    left: 750px;
-    top: 153.82px;
-}
-
 .image-r {
     position: absolute;
     width: 136px;
@@ -183,4 +175,539 @@
     position: absolute;
     width: 126px;
     height: 126px;
+}
+
+.AI_Analysis {
+  position: absolute;
+  width: 161px;
+  height: 20px;
+  left: 100px;
+  top: 98px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1A1B1C;
+}
+
+.AI_text {
+    position: absolute;
+    width: 296px;
+    height: 58px;
+    left: 100px;
+    top: 132px;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #1A1B1C;
+}
+
+.Polygon2-s {
+    position: absolute;
+    width: 9.43px;
+    height: 10.89px;
+    left: 159px;
+    top: 17px;
+    background: #1A1B1C;
+    transform: rotate(90deg);
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.Auto_layout_summary_button-icon-text-shrunk {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    position: absolute;
+    left: 130px;
+    top: 656px;
+}
+.Analyis { 
+  position: absolute;
+  width: 447.37px;
+  height: 442.37px;
+  left: 550px;
+  top: 166px;
+}
+
+.Demograpghics_option{
+  position: absolute;
+  width: 153px;
+  height: 153px;
+  left: 166px;
+  top: 32px;
+  background: #D2D2D2;
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+  
+.Demograpghics_text {
+  position: absolute;
+  width: 130px;
+  height: 16px;
+  left: 180px;
+  top: 100px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1A1B1C;
+  cursor: pointer;
+}
+
+.Skin_Type_option {
+  position: absolute;
+  width: 153px;
+  height: 153px;
+  left: 50px;
+  top: 145px;
+  background: #E5E5E5;
+  transform: rotate(-45deg);
+  cursor: not-allowed;
+}
+
+.Skin_Type_text {
+  position: absolute;
+  width: 76px;
+  height: 40px;
+  left: 88px;
+  top: 200px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1A1B1C;
+  cursor: not-allowed;
+
+}
+
+.Cosmetic_Concerns_option {
+  position: absolute;
+  width: 153px;
+  height: 153px;
+  left: 280px;
+  top: 145px;
+  background: #E5E5E5;
+  transform: rotate(-45deg);
+  cursor: not-allowed;
+}
+
+.Cosmetic_Concerns_text {
+  position: absolute;
+  width: 82px;
+  height: 40px;
+  left: 320px;
+  top: 200px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1A1B1C;
+  cursor: not-allowed;
+
+}
+
+.Weather_option {
+  position: absolute;
+  width: 153px;
+  height: 153px;
+  left: 165px;
+  top: 260px;
+  background: rgba(229, 229, 229, 0.933333);
+  transform: rotate(-45deg);
+  cursor: not-allowed;
+}
+
+.Weather_text {  
+  position: absolute;
+  width: 72px;
+  height: 16px;
+  left: 205px;
+  top: 325px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1A1B1C;
+  cursor: not-allowed;
+}
+
+.Analysis_text {
+    position: absolute;
+    width: 102px;
+    height: 24px;
+    left: 100px;
+    top: 75px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #1A1B1C;
+}
+
+.Demographics_title {
+    position: absolute;
+    width: 500px;
+    height: 64px;
+    left: 94px;
+    top: 105px;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 64px;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
+    color: #1A1B1C;
+}
+
+.Predicted_text {
+    position: absolute;
+    width: 154px;
+    height: 24px;
+    left: 100px;
+    top: 180px;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #1A1B1C;
+}
+
+.Demographics_box {
+    position: absolute;
+    width: 1120px;
+    height: 450px;
+    left: 30px;
+    top: 194px;
+}
+
+.Analysis_results {
+    position: absolute;
+    width: 200px;
+    height: 332px;
+    left: 30px;
+    top: 20px;   
+}
+
+.race_results {
+    position: absolute;
+    width: 200px;
+    height: 105px;
+    left: 20px;
+}
+
+.race_rectangle {
+    box-sizing: border-box;
+    position: absolute;
+    width: 200px;
+    height: 105px;
+    border-top: 1px solid #1A1B1C;
+    cursor: pointer;
+}
+
+.race {
+    position: absolute;
+    width: 88px;
+    height: 16px;
+    left: 13px;
+    top: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.race_text {
+    position: absolute;
+    width: 30px;
+    height: 16px;
+    left: 14px;
+    top: 70px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.age_results {
+    position: absolute;
+    width: 200px;
+    height: 105px;
+    top: 120px;
+    left: 20px;
+}
+
+.age_rectangle {
+    position: absolute;
+    width: 200px;
+    height: 105px;
+    border-top: 1px solid #1A1B1C;
+    cursor: pointer;
+
+}
+
+.age {
+    position: absolute;
+    width: 42px;
+    height: 16px;
+    left: 15px;
+    top: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.age_text {
+    position: absolute;
+    width: 30px;
+    height: 16px;
+    left: 15px;
+    top: 70px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.gender_results {
+    position: absolute;
+    width: 200px;
+    height: 105px;
+    top: 250px;
+    left: 20px;
+}
+
+.gender_rectangle {
+    box-sizing: border-box;
+    position: absolute;
+    width: 200px;
+    height: 105px;
+    border-top: 1px solid #1A1B1C;
+    cursor: pointer;
+
+}
+
+.gender {
+    position: absolute;
+    width: 59px;
+    height: 16px;
+    left: 15px;
+    top: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.gender_text {
+    position: absolute;
+    width: 29px;
+    height: 16px;
+    left: 15px;
+    top: 70px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.selected.race_results,
+.selected.age_results,
+.selected.gender_results {
+  background-color: #1A1B1C;
+  color: white;
+}
+
+.Demographics_rectangle_results {
+    position: absolute;
+    width: 900px;
+    height: 430px;
+    left: 260px;
+    top: 20px;
+}
+
+.Demographics_rectangle_box {
+    box-sizing: border-box;
+    position: absolute;
+    width: 900px;
+    height: 430px;
+    background: #F3F3F4;
+    border-top: 1px solid #1A1B1C;
+}
+
+.Demographics_rectangle_title {
+    position: absolute;
+    width: 270px;
+    height: 16px;
+    left: 25px;
+    top: 25px;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #1A1B1C;
+}
+
+.Demographics_graph {
+    position: absolute;
+    width: 401px;
+    height: 384px;
+    left: 500px;
+}
+
+.Graph {
+    position: absolute;
+    width: 401px;
+    height: 384px;
+    top: 37px;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+  box-sizing: border-box;
+  position: absolute;
+  width: 384px;
+  height: 384px;
+  top: 30px;
+}
+
+.progress-ring__background,
+.progress-ring__circle {
+  transition: stroke-dashoffset 0.6s ease;
+}
+
+.Demographics_graph_results {
+    position: absolute;
+    width: 76.65px;
+    height: 51.96px;
+    left: 170px;
+    top: 170px;
+}
+
+.Demographics_graph_results_text {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.05em;
+    color: #1A1B1C;
+}
+
+.confidance_results {
+    position: absolute;
+    width: 350px;
+    height: 430px;
+    left: 1175px;
+    top: 20px;
+}
+
+.confidance_box {
+    box-sizing: border-box;
+    width: 350px;
+    height: 430px;
+    background: #F3F3F4;
+    border-top: 1px solid #000000;
+}
+
+.confidance_tag_box {
+    position: absolute;
+    width: 350px;
+    height: 48px;
+}
+
+.confidance_tag_rectangle {
+    position: absolute;
+    width: 350px;
+    height: 48px;
+    background: #F3F3F4;
+}
+
+.confidance_catagory {
+    position: absolute;
+    width: 71.87px;
+    height: 26px;
+    top: 15px;
+    left: 14px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: -0.05em;
+    color: #1A1B1C;
+    text-transform: uppercase;
+}
+
+.aiConfidence_text {
+    position: absolute;
+    width: 124px;
+    height: 24px;
+    top: 15px;
+    left: 215px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #1A1B1C;
+}
+
+.confidence_tag {
+    padding-top: 60px;
+}
+
+.confidence-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.confidence-row.selected {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.confidence_text {
+    text-transform: uppercase;
+}
+
+.selectionText {
+    position: absolute;
+    width: 317px;
+    height: 24px;
+    left: 650px;
+    top: 700px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #A0A4AB;
+}
+
+.Polygon2-h {
+    position: absolute;
+    width: 9.43px;
+    height: 10.89px;
+    left: 78px;
+    top: 17px;
+    background: #1A1B1C;
+    transform: rotate(90deg);
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 }

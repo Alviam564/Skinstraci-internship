@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className='Rectangle5'>
       <Link to="/">
-        <span className='Skinstric'>Skinstric</span>
+        <div className='Skinstric'>Skinstric</div>
       </Link>
       <div className='button-code'>
         <div className='Auto_layout_center_button-simple '>

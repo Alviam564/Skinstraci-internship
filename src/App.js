@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import './styles/Phaseone.css'
 import './styles/Phasetwo.css'
+import './styles/Phasethree.css'
 import Home from "./pages/Home.jsx"
 import Testing from "./pages/Testing.jsx"
 import Results from "./pages/Results.jsx"
