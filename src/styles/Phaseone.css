@@ -6,8 +6,8 @@
   box-sizing: border-box;
 }
 
-#frame1, #frame6{
-  width: 100vw;
+#frame1,#frame6 {
+  width: 99vw;
   max-width: 1920px;
   height: 100vh;
   background: #FFFFFF;
@@ -23,7 +23,7 @@ a {
   width: 316px;
   height: 72px;
   left: 40px;
-  top: 650px;
+  top: 700px;
   font-weight: 700;
   font-size: 13px;
   line-height: 23px;
