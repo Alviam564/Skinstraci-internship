@@ -6,7 +6,15 @@
   box-sizing: border-box;
 }
 
-#frame1,#frame6 {
+#frame1, #frame6 {
+  width: 99vw;
+  max-width: 1920px;
+  height: 100vh;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+#frame1, #frame6 {
   width: 99vw;
   max-width: 1920px;
   height: 100vh;
@@ -500,22 +508,13 @@ a {
   color: #1A1B1C;
 }
 
-.Line1 {
+.Line1,.Line2 {
   position: absolute;
-  left: 39.4%;
-  right: 35.56%;
-  top: 53.9%;
-  bottom: 45.97%;
+  width: 356px;
+  height: 1px;
   background: #1A1B1C;
-}
-
-.Line2 {
-  position: absolute;
-  left: 39%;
-  right: 35.35%;
-  top: 54.29%;
-  bottom: 45.58%;
-  background: #1A1B1C;
+  left: 40.5%;
+  top: 55%;
 }
 
 .input {
@@ -690,9 +689,23 @@ a {
   opacity: 0;
 }
 
+@media (max-width: 1024px) {
+  .yourname, .yourcity {
+    left: 57%;
+    right: 0;
+    top: 50%;
+  }
+  .Line1, .Line2 {
+    position: absolute;
+    left: 61%;
+    top: 61%;
+    width: 356px;
+    height: 1px;
+  }
+}
+
 @media (max-width: 768px) {
   #frame1, #frame6{
-    overflow: hidden;
     padding: 20px;
   }
 
@@ -826,8 +839,9 @@ a {
   }
 
   .Line1, .Line2 {
-    right: 33%;
+    top: 53%;
     left: 37%;
+    width: 250px;
   }
 
   .input {
@@ -864,6 +878,10 @@ a {
 }
 
 @media (max-width: 425px) {
+
+  #frame6 {
+  width: 100vw;
+}
   .header1 {
     width: 100%;
     height: auto;
@@ -998,8 +1016,8 @@ a {
   }
 
   .Line1, .Line2 {
-    right: 15%;
-    left: 15%;
+    top: 55%;
+    left: 20%;
   }
 
   .input {
