@@ -7,9 +7,9 @@
 }
 
 #frame1, #frame6{
-  position: relative;
-  width: 1600px;
-  height: 770px;
+  width: 100vw;
+  max-width: 1920px;
+  height: 100vh;
   background: #FFFFFF;
   overflow: hidden;
 }
@@ -187,16 +187,21 @@ a {
   opacity: 0.7;
 }
 
+.diamond-wrapper {
+  width: 231px;
+  height: 462px;
+  left: 1369px;
+  top: 150px;
+  position: relative;
+}
+
 .Rectangle2{
   position: absolute;
   width: 462px;
   height: 462px;
-  left: 1369px;
-  top: 150px;
   opacity: 0.6;   
   border: 2px solid #A0A4AB;
   transform: rotate(-45deg);
-
 }
 
 .Rectangle10{
@@ -298,7 +303,6 @@ a {
   left: 1383px;
   top: 367px;
 }
-
 
 .Taketest{
   position: absolute;
@@ -626,6 +630,10 @@ a {
   top: 656px;
 }
 
+#frmae12 .Auto_layout_button-icon-text-shrunk {
+  width: 20%;
+}
+
 .Rectangle16-p {
   box-sizing: border-box;
   position: absolute;
@@ -684,8 +692,6 @@ a {
 
 @media (max-width: 768px) {
   #frame1, #frame6{
-    width: 100%;
-    height: 660px;
     overflow: hidden;
     padding: 20px;
   }
@@ -726,6 +732,7 @@ a {
   }
 
   .Rectangle10,
+  .Rectangle2,
   .discoverai,
   .Rectangle16-L,
   .Rectangle17-L,
@@ -801,7 +808,6 @@ a {
   }
 
   .start_analysis {
-    width: 100%;
     left: 90px;
     top: 50px;
     text-align: center;
@@ -833,9 +839,8 @@ a {
     width: 100px;
     position: relative;
     left: 100px;
-    top: -5px;
+    top: -6px;
   }
-
 
   .Auto_layout_proceed_button-icon-text-shrunk {
     left: 550px;
@@ -873,6 +878,7 @@ a {
 
   .Auto_layout_test_button-icon-text-shrunk {
     left: 150px;
+    top: 450px;
   }
 
   .Auto_layout_center_button-simple {
@@ -987,7 +993,7 @@ a {
     line-height: 36px;
     text-align: center;
     left: 1px;
-    top: 300px;
+    top: 325px;
     width: 100%;
   }
 
@@ -1002,14 +1008,14 @@ a {
   }
 
   .Auto_layout_back_button-icon-text-shrunk {
-    position: relative;
-    left: 5px;
-    top: 77px;
+    position: absolute;
+    left: 60px;
+    top: 580px;
   }
 
   .Auto_layout_proceed_button-icon-text-shrunk {
     left: 280px;
-    top: 615px;
+    top: 650px;
   }
 
   #frame12 .Auto_layout_proceed_button-icon-text-shrunk {
@@ -1023,7 +1029,6 @@ a {
 
   .Next, .Loading {
     position: relative;
-    top: -270px;
     left: 1px;
   }
 
@@ -1150,7 +1155,6 @@ a {
     line-height: 36px;
     text-align: center;
     left: 11px;
-    top: 300px;
     width: 100%;
   }
 
@@ -1166,11 +1170,6 @@ a {
 
   .Auto_layout_proceed_button-icon-text-shrunk {
     left: 180px;
-    top: 615px;
-  }
-
-  .Next {
-    top: -280px;
   }
 
   .Button_enter,

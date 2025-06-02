@@ -59,7 +59,7 @@ useEffect(() => {
       <p className='SkinstricP'>
         Skinstric developed an A.I. that creates a highly-personalised routine tailored to what your skin needs.
       </p>
-      <div >
+      <div>
         <div className='Rectangle10' />
           <div className='Auto_layout_button-icon-text-shrunk'>
           <div className='Rectanglehandler'>
@@ -71,16 +71,18 @@ useEffect(() => {
           </div>
           <div>
             <div className='discoverai'>Discover A.I.</div>
-            <div className='Inside_auto_layou2' />
+            <div className='Inside_auto_layout2' />
           </div>
         </div>
       </div>
       <div>
-        <div className='Rectangle2' />
+        <div className='diamond-wrapper'>
+          <div className='Rectangle2' />
+        </div>
         <Link to ="/testing">
           <div className='Auto_layout_test_button-icon-text-shrunk'>
           <div className='Taketest'>Take Test</div>
-          <div className='Inside_auto_layou1' />
+          <div className='Inside_auto_layout1' />
             <div className='Rectanglehandler'>
               <div className='Inside_auto_layout2' />
               <div className='Rectangle16-R' />
