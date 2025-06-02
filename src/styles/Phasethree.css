@@ -288,14 +288,14 @@
   position: absolute;
   width: 100px;
   font-weight: 400;
-  font-size: 20px !important;
+  font-size: 20px;
   bottom: 200px;
 }
 
 .Shotp {
   position: absolute;
   font-weight: 400;
-  font-size: 20px !important;
+  font-size: 20px;
   top: 200px;
 }
 
@@ -311,7 +311,7 @@
   top: 250px;
   left: 40px;
   background: #1A1B1C;
-  border: #FFFFFF !important;
+  border: #FFFFFF;
   cursor: pointer;
 }
 
@@ -335,7 +335,7 @@
   height: 35px;
   top: 250px;
   right: 1px;
-  background: #FFFFFF !important;
+  background: #FFFFFF;
 }
 
 .Shotr{
@@ -344,7 +344,7 @@
   line-height: 16px;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: black !important; 
+  color: black ; 
   cursor: pointer;
 }
 
@@ -356,6 +356,11 @@
   height: 100vh;
   position: fixed;
   width: 100%;
+}
+@media (max-width: 1440px) {
+  .diamond-wrapper {
+    left: 1210px;
+  }
 }
 
 @media (max-width: 768px) {
