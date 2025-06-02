@@ -689,17 +689,17 @@ a {
   opacity: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .yourname, .yourcity {
-    left: 57%;
-    right: 0;
-    top: 50%;
+    left: 44%;
+    top: 40%;
+    width: 370px;
   }
   .Line1, .Line2 {
     position: absolute;
-    left: 61%;
-    top: 61%;
-    width: 356px;
+    left: 44%;
+    top: 49%;
+    width: 367px;
     height: 1px;
   }
 }
