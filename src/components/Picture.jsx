@@ -174,7 +174,7 @@ function Picture() {
             <div className='Shotg'>Great Shot!</div>
             <div className='Shotp'>Preview</div>
             <button onClick={handleRetake} className='tryAgain'>
-                <div className='Shotr'>Retake</div>
+                <p className='Shotr'>Retake</p>
             </button>
             <button onClick={handleConfirm} className='useShot'>
                 <div className='Shots'>Use this Photo</div>

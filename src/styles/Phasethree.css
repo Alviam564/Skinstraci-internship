@@ -23,8 +23,7 @@
 }
 
 #frame16 div,
-#frame16 span,
-#frame16 p {
+#frame16 span {
   color: #FFFFFF;
   border-color: #FFFFFF;
   font-size: 14px;
