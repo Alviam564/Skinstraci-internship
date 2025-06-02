@@ -9,19 +9,16 @@ function Summary() {
   const demographicData = location.state?.demographicData;
 
    return (
-    <section id="frame12">
+    <section id="frame13">
       <Navbar />
       <div className='Analysis_text'>A. I. Analysis</div>
       <div className='Demographics_title'>Demographics</div>
       <div className='Predicted_text'>Predicted Race & Age</div>
       <Demographic demographicData={demographicData}/>
-      <div>
-        <Link to="/select">
-          <Buttonback />
-        </Link>
-      </div>
+      <Link to="/select">
+        <Buttonback />
+      </Link>
       <div className='selectionText'>If A.I. estimate is wrong, select the correct one</div>
-      <div>
         <Link to="/">
           <div className='Auto_layout_proceed_button-icon-text-shrunk'>
             <div>
@@ -37,7 +34,6 @@ function Summary() {
             </div>
           </div>
         </Link>
-      </div>
     </section>
   )
 }

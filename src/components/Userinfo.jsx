@@ -80,10 +80,8 @@ const Userinfo = () => {
         {step === 3 && !loading && (
           <>
           <div className='Next'>
-            <div>
-              <span> Thank you! </span>
-            </div>
-            <span>Proceed to the next step</span>
+            <div>Thank you!</div>
+            <div>Proceed to the next step</div>
           </div>
           <Link to="/results">
             <Buttonproceed />

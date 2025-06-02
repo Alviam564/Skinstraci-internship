@@ -1,37 +1,84 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
 
 function Home() {
+
+useEffect(() => {
+  const testBtn = document.querySelector('.Taketest');
+  const skincare = document.querySelector('.Sophisticated_skincare');
+  const discoverBlock = document.querySelector('.Auto_layout_button-icon-text-shrunk');
+  const discoverboxBlock = document.querySelector('.Rectangle10');
+
+  if (!testBtn || !skincare || !discoverBlock || !discoverboxBlock) return;
+
+  const move = () => {
+    skincare.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
+    skincare.style.opacity = '1';
+    skincare.style.transform = 'translateX(-250px)';
+    discoverBlock.style.opacity = '0';
+    discoverBlock.style.pointerEvents = 'none';
+    discoverboxBlock.style.opacity = '0';
+    discoverboxBlock.style.pointerEvents = 'none';  };
+
+  const reset = () => {
+    skincare.style.transform = 'translateX(0)';
+    skincare.style.opacity = '1';
+    discoverBlock.style.opacity = '1';
+    discoverBlock.style.pointerEvents = 'auto';
+    discoverboxBlock.style.opacity = '1';
+    discoverboxBlock.style.pointerEvents = 'auto';
+  };
+
+  testBtn.addEventListener('mouseenter', move);
+  testBtn.addEventListener('mouseleave', reset);
+
+  return () => {
+    testBtn.removeEventListener('mouseenter', move);
+    testBtn.removeEventListener('mouseleave', reset);
+  };
+}, [])
+
   return (
     <section id="frame1">
       <Navbar />
-      <span className='Sophisticated_skincare slide'>
-        Sophisticated Skincare
-      </span>
+      <div>
+        <div className='hidden'>
+          <div className='rombuses'>
+          <div className='Rectangle18' />
+          <div className='Rectangle10-2' />
+          <div className='Rectangle17-2' />
+        </div>
+      </div>
+      <div className='title-wrapper'>
+        <div className='Sophisticated_skincare'>
+          Sophisticated Skincare
+        </div>
+      </div>
+      </div>
       <p className='SkinstricP'>
         Skinstric developed an A.I. that creates a highly-personalised routine tailored to what your skin needs.
       </p>
-      <div>
+      <div >
         <div className='Rectangle10' />
-        <div className='Auto_layout_button-icon-text-shrunk'>
-        <div className='Rectanglehandler'>
-          <div className='Inside_auto_layout1' />
-          <div className='Rectangle16-L' />
-          <div className='Rectangle17-L' />
-          <div className='Rectangle13-L' />
-          <div className='Polygon1-L' />
+          <div className='Auto_layout_button-icon-text-shrunk'>
+          <div className='Rectanglehandler'>
+            <div className='Inside_auto_layout1' />
+            <div className='Rectangle16-L' />
+            <div className='Rectangle17-L' />
+            <div className='Rectangle13-L' />
+            <div className='Polygon1-L' />
+          </div>
+          <div>
+            <div className='discoverai'>Discover A.I.</div>
+            <div className='Inside_auto_layou2' />
+          </div>
         </div>
-        <div>
-          <div className='discoverai'>Discover A.I.</div>
-          <div className='Inside_auto_layou2' />
-        </div>
-      </div>
       </div>
       <div>
         <div className='Rectangle2' />
         <Link to ="/testing">
-          <div className='Auto_layout_center_button-icon-text-shrunk'>
+          <div className='Auto_layout_test_button-icon-text-shrunk'>
           <div className='Taketest'>Take Test</div>
           <div className='Inside_auto_layou1' />
             <div className='Rectanglehandler'>

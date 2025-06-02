@@ -1,7 +1,7 @@
 import React from 'react'
 import { GoKebabHorizontal } from 'react-icons/go'
 
-function UserGallery({ centerContent, handleFileChange}) {
+function UserGallery({ centerContent, handleFileChange, dim }) {
   return (
     <>
       {centerContent === 'scanning' && (
@@ -11,33 +11,15 @@ function UserGallery({ centerContent, handleFileChange}) {
             <div className='Rectangle10-2' />
             <div className='Rectangle17-2' />
           </div>
-          <div className='Loading'>
-            <span>Preparing your Analysis</span>
+          <div className='Loading2'>
+            <div>Preparing your Analysis</div>
             <GoKebabHorizontal />
           </div>
         </>
       )}
       {centerContent === 'initial' && (
         <>
-          <div>
-            <div className='Scan'>
-              <div className='rombuses-l'>
-                <div className='Rectangle18-l'></div>
-                <div className='Rectangle10-l'></div>
-                <div className='Rectangle17-l'></div>
-              </div>
-            </div>
-            <div className='line-l'>
-              <img src="/line_l.png" alt="" />
-            </div>
-            <div className='image-l'>
-              <img src="/camera.png" alt="" />
-            </div>
-            <div className='AccessScantext'>
-              <span>Allow A.I. To scan your face</span>
-            </div>
-          </div>
-          <div>
+          <div className={`GalleryWrapper ${dim ? 'dimmed' : ''}`}>
             <div className='Gallery'>
               <div className='rombuses-r'>
                 <div className='Rectangle18-r'></div>

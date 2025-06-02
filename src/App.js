@@ -7,6 +7,8 @@ import Testing from "./pages/Testing.jsx"
 import Results from "./pages/Results.jsx"
 import Select from "./pages/Select.jsx"
 import Summary from "./pages/Summary.jsx"
+import Camera from "./pages/Camera.jsx"
+import Capture from "./pages/Capture.jsx"
 
 const App = () => (
   <Router>
@@ -16,6 +18,8 @@ const App = () => (
       <Route path="/results" element={<Results />} />
       <Route path="/select" element={<Select />} />
       <Route path="/summary" element={<Summary />} />
+      <Route path="/camera" element={<Camera />} />
+      <Route path="/camera/capture" element={<Capture />} />
     </Routes>
   </Router>
 )

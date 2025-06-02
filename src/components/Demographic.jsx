@@ -1,26 +1,31 @@
-import React, { useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+
+const getTopEntryKey = (obj) => (
+  Object.entries(obj).reduce((top, curr) => curr[1] > top[1] ? curr : top)[0]
+)
+
+const formatPercentage = (val) => `${Math.round(val * 100)}%`;
+
+const CATEGORY_LIST = ['race', 'age', 'gender'];
 
 function Demographic() {
   const { state } = useLocation();
-  const demographicData = state?.demographicData || {};
-  const { age = {}, gender = {}, race = {} } = demographicData;
+  const { age = {}, gender = {}, race = {} } = state?.demographicData || {};
+  
 
-  const [selectedCategory, setSelectedCategory] = useState('race');
+  const [selectedCategory, setSelectedCategory] = useState("race");
+
   const [selectedKey, setSelectedKey] = useState({
-    race: Object.keys(race)[0] || '',
-    age: Object.keys(age)[0] || '',
-    gender: Object.keys(gender)[0] || '',
+    race: getTopEntryKey(race),
+    age: getTopEntryKey(age),
+    gender: getTopEntryKey(gender)
   });
 
-  const dataMap = { race, age, gender };
+  const dataMap = useMemo(() => ({ race, age, gender }), [race, age, gender]);
   const selectedData = dataMap[selectedCategory];
   const selectedValue = selectedData[selectedKey[selectedCategory]] ?? 0;
 
-  const formatPercentage = (val) => `${Math.round(val * 100)}%`;
-
-  const getTopEntryKey = (obj) => {
-  return Object.entries(obj).reduce((top, curr) => curr[1] > top[1] ? curr : top)[0]}
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category); 
@@ -29,19 +34,24 @@ function Demographic() {
   };
 
   const handleOptionClick = (key) => {
-  setSelectedKey((prev) => ({
-    ...prev,
-    [selectedCategory]: key,
-  }));
-};
+    setSelectedKey((prev) => ({
+      ...prev,
+      [selectedCategory]: key,
+    }));
+  };
+
+  useEffect(() => {
+  const topKey = getTopEntryKey(dataMap[selectedCategory]);
+  setSelectedKey(prev => ({ ...prev, [selectedCategory]: topKey }));
+  }, [dataMap, selectedCategory]);
 
   return (
     <div className='Demographics_box'>
       <div className='Analysis_results'>
-        {['race', 'age', 'gender'].map((category) => (
+        {CATEGORY_LIST.map((category) => (
           <div key={category} className={`${category}_results ${selectedCategory === category ? 'selected' : ''}`} onClick={() => handleCategoryClick(category)}>
             <div className={`${category}_rectangle`}>
-              <div className={category}>{getTopEntryKey(dataMap[category])}</div>
+              <div className={category}>{selectedKey[category]}</div>
               <div className={`${category}_text`}>
                 {category.charAt(0).toUpperCase() + category.slice(1)}
               </div>
@@ -54,7 +64,7 @@ function Demographic() {
         <div className='Demographics_rectangle_box'></div>
         <div className='Demographics_rectangle_title'>{selectedKey[selectedCategory]}</div>
         <div className='Demographics_graph'>
-          <svg width="384" height="384" className="progress-ring">
+          <svg className="progress-ring">
             <circle className="progress-ring__background" stroke="#C1C2C3" strokeWidth="6" fill="transparent" r="190" cx="192" cy="192"/>
             <circle className="progress-ring__circle" stroke="#1A1B1C" strokeWidth="6" fill="transparent" r="190" cx="192" cy="192"
               style={{
@@ -74,11 +84,11 @@ function Demographic() {
         </div>
       </div>
 
-      <div className='confidance_results'>
-        <div className='confidance_box'>
-          <div className='confidance_tag_box'>
-            <div className='confidance_tag_rectangle'>
-              <div className='confidance_catagory'>{selectedCategory}</div>
+      <div className='confidence_results'>
+        <div className='confidence_box'>
+          <div className='confidence_tag_box'>
+            <div className='confidence_tag_rectangle'>
+              <div className='confidence_catagory'>{selectedCategory}</div>
               <div className='aiConfidence_text'>a. i. confidence</div>
             </div>
             <div className='confidence_tag'>

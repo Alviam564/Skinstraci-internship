@@ -5,11 +5,14 @@ import Navbar from '../components/Navbar'
 import Buttonback from '../components/Buttonback'
 import UserGallery from '../components/UserGallery'
 import Demographic from '../components/Demographic'
+import UserCamera from '../components/UserCamera'
 
 function Results() {
   const [preview, setPreview] = useState('');
   const [centerContent, setCenterContent] = useState('initial');
   const [demographicData, setDemographicData] = useState();
+  const [showInfo, setShowInfo] = useState(false)
+
   const navigate = useNavigate();
 
   const handleFileChange = async (e) => {
@@ -38,7 +41,6 @@ function Results() {
         });
         
         const result = await response.json();
-        console.log("API result:", result);
 
         if (result.success) {
           setDemographicData(result.data)
@@ -55,11 +57,12 @@ function Results() {
     }
   }
 
-   return (
+  return (
     <section id="frame9">
       <Navbar />
       <div className='start_analysis'>To start Analysis</div>
-      <UserGallery centerContent={centerContent} handleFileChange={handleFileChange} />
+      <UserCamera showInfo={showInfo} setShowInfo={setShowInfo} centerContent={centerContent}/>
+      <UserGallery centerContent={centerContent} handleFileChange={handleFileChange} dim={showInfo}/>
       <div className='Preview'>
         <div className='Preview-text'> Preview </div>
         <div className='Preview-border'>

@@ -6,10 +6,668 @@
   box-sizing: border-box;
 }
 
-.Allowcamera {
-    position: absolute;
-    width: 497.55px;
-    height: 452.55px;
-    left: 750px;
-    top: 153.82px;
+#frame15 {
+  position: relative;
+  width: 1600px;
+  height: 770px;
+  background: #FFFFFF;
+}
+
+#frame16 {
+  position: relative;
+  width: 1600px;
+  height: 770px;
+  background: #1a1b1a;
+}
+
+#frame16 div,
+#frame16 span,
+#frame16 p {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  font-size: 14px;
+}
+
+#frame16 .Polygon2-b {
+  background: #FFFFFF;
+}
+
+#frame16 .Auto_layout_center_button-simple {
+  width: 120px;
+  background: none;
+}
+  
+.float-info-box {   
+  position: absolute;
+  width: 300px;
+  height: 120px;
+  left: 100px;
+}
+
+.AllowCamera {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  background: #1A1B1C;
+}
+
+.floatline {
+  position: absolute;
+  width: 300px;
+  height: 3px;
+  background: #FCFCFC;
+  top: 62px;
+}
+
+.Autolayout_yes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 16px 10px;
+  gap: 8px;
+  position: absolute;
+  width: 80px;
+  height: 35px;
+  top: 65px;
+  left: 220px;
+  background: #1A1B1C;
+}
+
+.Allow {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+
+.Autolayout_no {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  padding: 9px 16px 10px;
+  gap: 8px;
+  position: absolute;
+  width: 68px;
+  height: 35px;
+  top: 65px;
+  left: 152px;
+  background: #1A1B1C;
+}
+
+.Deny {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #FCFCFC;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.float-info-text {
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+
+.dimmed, .camera-ui.dimmed {
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.cameracenter {
+  position: absolute;
+  width: 152px;
+  height: 152px;
+  left: 750px;
+  top: 323px;
+}
+
+.setup {
+  position: absolute;
+  width: 227px;
+  height: 24px;
+  left: 710px;
+  top: 470px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #1A1B1C;
+}
+
+.camerainfo {
+  position: absolute;
+  width: 491.94px;
+  height: 64px;
+  left: 530px;
+  top: 590px;
+}
+
+.info1 {
+  position: absolute;
+  width: 350px;
+  left: 120px;
+  top: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #1A1B1C;
+}
+
+.extrainfo {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  gap: 32px;
+  position: absolute;
+  width: 600px;
+  height: 24px;
+  top: 85px;
+}
+
+.exrtainfo1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+  height: 24px;
+}
+  
+.s-box{
+  box-sizing: border-box;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #1A1B1C;
+  transform: rotate(-45deg);
+}
+
+.info2 {
+  height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #1A1B1C;
+}
+
+.extrainfo2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+  height: 24px;
+}
+
+.info3 {
+  height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #1A1B1C;
+}
+  
+.exrtainfo3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+  height: 24px;
+}
+
+.info4 {
+  height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #1A1B1C;
+}
+
+.camera-ui.active {
+  opacity: 1;
+}
+
+.takepic-box {
+  position: absolute;
+  width: 169px;
+  height: 62px;
+  left: 1270px;
+  top: 329px;
+}
+
+.takepic-button {
+  position: absolute;
+  left: 100px;
+}
+
+.takepic-text {
+  position: absolute;
+  font-weight: 600;
+  font-size: 20px;
+  top: 23px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #FCFCFC;
+  opacity: 0.8;
+}
+
+.w-screen{
+  width: 100vw;
+}
+
+.h-screen {
+  height: 99vh;
+}
+
+.Shot {
+  position: absolute;
+  left: 750px;
+  top: 350px;
+}
+
+.Shotg {
+  position: absolute;
+  width: 100px;
+  font-weight: 400;
+  font-size: 20px !important;
+  bottom: 200px;
+}
+
+.Shotp {
+  position: absolute;
+  font-weight: 400;
+  font-size: 20px !important;
+  top: 200px;
+}
+
+.useShot{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 16px 10px;
+  gap: 8px;
+  position: absolute;
+  width: 100px;
+  height: 35px;
+  top: 250px;
+  left: 40px;
+  background: #1A1B1C;
+  border: #FFFFFF !important;
+  cursor: pointer;
+}
+
+.Shots{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+
+.tryAgain{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+  position: absolute;
+  width: 85px;
+  height: 35px;
+  top: 250px;
+  right: 1px;
+  background: #FFFFFF !important;
+}
+
+.Shotr{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: black !important; 
+  cursor: pointer;
+}
+
+.loader-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #frame15, #frame16 {
+    width: 100%;
+    height: 660px;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  a #frame15 {
+    width: 1px;
+    height: 1px;
+  }
+
+  .float-info-box {
+    height: 100px;
+    top: 10px;
+    left: 120px;
+  }
+
+  .cameracenter {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: -300px;
+    left: 340px;
+  }
+
+  .setup {
+    position: relative;
+    left: 288px;
+    top: -270px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  #frame16 .Auto_layout_center_button-simple {
+    left: 610px;
+  }
+
+  .w-screen {
+    position: relative;
+    width: 95vw;
+    top: 20px;
+  }
+
+  .h-screen {
+    height: 70vh
+  }
+
+  .camerainfo {
+    width: 90%;
+    left: 120px;
+    top: -153px;
+    position: relative;
+  }
+
+  .s-box {
+    width: 6px;
+    height: 6px;
+  }
+
+  .takepic-box {
+    top: 225px;
+    left: 680px;
+    width: 100px;
+  }
+
+  .takepic-button {
+    position: relative;
+    left: 0;
+    width: 62px;
+  }
+
+  .takepic-text {
+    position: relative;
+    top: 0px;
+    right: 30px;
+  }
+
+  #frame16 .Auto_layout_back_button-icon-text-shrunk {
+    top: 0px;
+  }
+
+  .Shot {
+    position: relative;
+    left: 0;
+    top: 0px;
+    margin-top: 24px;
+  }
+
+  .Shotg, .Shotp {
+    font-size: 16px;
+    position: relative;
+    bottom: 0px;
+    top: 0px;
+    text-align: center;
+  }
+
+  .Shotg {
+    width: 100px;
+    left: 320px;
+  }
+
+  .tryAgain {
+    width: 45%;
+    height: 40px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 16px;
+    justify-content: center;
+  }
+
+  .useShot {
+    width: 45%;
+    height: 40px;
+    position: relative;
+    top: -56px;
+    left: 350px;
+    margin-top: 16px;
+    justify-content: center;
+  }
+
+  .Shots, .Shotr {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .loader-screen {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  #frame15, #frame16 {
+    overflow-y: scroll
+  }
+
+  #frame16 .Auto_layout_center_button-simple {
+    left: 300px;
+  }
+
+  .float-info-box {
+    left: -90px;
+  }
+
+  .cameracenter {
+    left: 140px;
+  }
+
+  .setup {
+    font-size: 13px;
+    top: -280px;
+    left: 90px;
+  }
+
+  .camerainfo {
+    left: 58px;
+    top: -153px;
+  }
+
+  .info1, .info2, .info3, .info4 {
+    font-size: 13px;
+  }
+
+  .info1 {
+    left: 10px;
+  }
+
+  .extrainfo {
+    gap: 20px;
+    width: 300px;
+  }
+
+  .h-screen {
+    height: 62vh;
+    top: 110px;
+    position: relative;
+  }
+  
+  .w-screen {
+    position: relative;
+    right: 100px;
+    width: 85vh;
+  }
+
+  .takepic-button img{
+    transform: rotate(0deg);
+  }
+
+  .takepic-box {
+    position: relative;
+    top: 100px;
+    left: 169px;
+  }
+
+  .takepic-text {
+    right: 10px;
+    font-size: 15px;
+  }
+
+  #frame16 .Auto_layout_back_button-icon-text-shrunk {
+    top: 160px;  
+  }
+
+  .Shot {
+    top: 140px;
+  }
+
+  .Shotg, .Shotp {
+    font-size: 15px;
+  }
+
+  .Shotg {
+    left: 145px;
+  }
+
+  .useShot {
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .useShot,
+  .tryAgain {
+    width: 100%;
+    height: 38px;
+  }
+
+  .Shots, .Shotr {
+    font-size: 12px;
+  }
+
+  .loader-screen {
+    font-size: 18px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+
+  #frame16 .Auto_layout_center_button-simple {
+    left: 200px;
+  }
+
+  .cameracenter {
+    left: 95px;
+  }
+
+  .setup {
+    top: -272px;
+    left: 45px;
+  }
+
+  .camerainfo {
+    left: 0px;
+    top: -153px;
+  }
+
+  .w-screen {
+    right: 150px;
+  }
+
+  img .h-screen
+
+  .camerainfo {
+    width: 90%;
+    left: 120px;
+    top: -153px;
+    position: relative;
+  }
+
+  .s-box {
+    width: 6px;
+    height: 6px;
+  }
+
+  .takepic-box {
+    left: 117px;
+  }
+
+  #frame16 .Auto_layout_back_button-icon-text-shrunk {
+    top: 160px;  
+  }
+
+  .Shot {
+    top: 170px;
+  }
+
+  .Shotg, .Shotp {
+    font-size: 16px ;
+  }
+
+
+  .Shotg {
+    left: 90px;
+  }
+
+  .useShot,
+  .tryAgain {
+    width: 100%;
+    height: 36px;
+  }
+
+  .Shots, .Shotr {
+    font-size: 13px;
+  }
+
+  .loader-screen {
+    font-size: 17px;
+    padding: 10px;
+  }
 }

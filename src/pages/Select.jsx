@@ -8,13 +8,13 @@ function Select() {
   const demographicData = location.state?.demographicData;
 
   return (
-    <section id="frame13">
+    <section id="frame12">
       <Navbar />
       <div>
         <div className='AI_Analysis'>A. I. Analysis</div>
         <div className='AI_text'>A. I. has estimated the following. Fix estimated information if needed. </div>
       </div>
-      <div className='Analyis'>
+      <div className='Analysis'>
         <div>
           <Link to='/summary' state={{ demographicData }}>
             <div className='Demograpghics_option'></div>
