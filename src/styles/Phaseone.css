@@ -32,7 +32,7 @@ a {
 
 .Sophisticated_skincare {
   font-weight: 400;
-  font-size: 80px;
+  font-size: 100px;
   line-height: 120px;
   text-align: center;
   letter-spacing: -0.07em;
@@ -137,8 +137,8 @@ a {
 .Rectangle2,
 .Rectangle10 {
   position: absolute;
-  width: 470px;
-  height: 470px;
+  width: 602px;
+  height: 602px;
   opacity: 0.6;
   border: 2px solid #A0A4AB;
   transform: rotate(-45deg);
@@ -416,24 +416,11 @@ a {
   opacity: 0;
 }
 
-@media (max-width: 1920px) {
-  .Rectangle10, .Rectangle2 {
-    width: 602px;
-    height: 602px;
-  }
-}
-
 @media (max-width: 1440px) {
-  .Rectangle10 {
-    left: -330px;
+  .Rectangle10, .Rectangle2 {
+    width: 470px;
+    height: 470px;
   }
-  .Rectangle2 {
-    right: -260px;
-  }
-  .Auto_layout_test_button-icon-text-shrunk {
-    margin-right: 100px;
-  } 
-
 }
 
 @media (max-width: 1024px) {
