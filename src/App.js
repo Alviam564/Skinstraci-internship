@@ -8,7 +8,7 @@ import Results from "./pages/Results.jsx"
 import Select from "./pages/Select.jsx"
 import Summary from "./pages/Summary.jsx"
 import Camera from "./pages/Camera.jsx"
-import Capture from "./pages/Capture.jsx"
+import Picture from "./pages/Picture.jsx"
 
 const App = () => (
   <Router>
@@ -19,7 +19,7 @@ const App = () => (
       <Route path="/select" element={<Select />} />
       <Route path="/summary" element={<Summary />} />
       <Route path="/camera" element={<Camera />} />
-      <Route path="/camera/capture" element={<Capture />} />
+      <Route path="/camera/picture" element={<Picture />} />
     </Routes>
   </Router>
 )

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
-import Camerainfo from '../components/Camerainfo'
 import { useNavigate } from 'react-router-dom';
 
 function Camera() {
@@ -15,14 +14,14 @@ function Camera() {
     navigator.mediaDevices.enumerateDevices()
       .then((stream) => {
         stream.getTracks().forEach(track => track.stop());
-        navigate('/camera/capture');
+        navigate('/camera/picture');
       })
       .catch((err) => {
         console.error(err);
       });
 
     const redirectTimer = setTimeout(() => {
-      navigate('/camera/capture');
+      navigate('/camera/picture');
     }, 5000);
 
     return () => {
@@ -36,16 +35,30 @@ function Camera() {
       <Navbar />
       <div className={`camera-ui ${highlight ? 'active' : 'dimmed'}`}>
         <div className='rombuses'>
+          <img src="/camera.png" alt="" />
+          <div className="setup">Setting up camera ...</div>
           <div className='Rectangle18' />
           <div className='Rectangle10-2' />
           <div className='Rectangle17-2' />
         </div>
-        <div className='cameracenter'>
-          <img src="camera.png" alt="" />
-        </div>
-        <div className="setup">Setting up camera ...</div>
       </div>
-      <Camerainfo />
+      <div className='camerainfo'>
+        <div className='info1'>To get better results make sure to have</div>
+      </div>
+        <div className='extrainfo'>
+          <div className='extrainfo1'>
+            <div className='s-box'></div>
+            <span className='info2'>Neutral Expression</span>
+          </div>
+          <div className='extrainfo2'>
+            <div className='s-box'></div>
+            <span className='info3'>Frontal Pose</span>
+          </div>
+          <div className='exrtainfo3'>
+            <div className='s-box'></div>
+            <span className='info4'>Adequate Lighting</span>
+          </div>
+        </div>
     </section>
   )
 }

@@ -285,26 +285,23 @@ a {
   opacity: 0.4;
 }
 
-.yourname {
+.yourname, .yourcity {
   display: flex;
   flex-direction: column;
-  margin-right: 300px;
   font-weight: 300;
-  font-size: 50px;
   line-height: 64px;
   letter-spacing: -0.07em;
   color: #1A1B1C;
 }
 
+.yourname {
+  margin-right: 300px;
+  font-size: 50px;
+}
+
 .yourcity {
-  display: flex;
-  flex-direction: column;
   margin-right: 320px;
-  font-weight: 300;
   font-size: 45px;
-  line-height: 64px;
-  letter-spacing: -0.07em;
-  color: #1A1B1C;
 }
 
 .Line1, .Line2 {

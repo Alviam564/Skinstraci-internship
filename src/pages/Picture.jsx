@@ -1,8 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { useNavigate } from 'react-router-dom';
-import Demographic from './Demographic';
+import { Link, useNavigate } from 'react-router-dom';
+import Demographic from '../components/Demographic';
+import Buttonback from '../components/Buttonback';
+import Navbar from '../components/Navbar';
 
-function Picture() {
+function Picture({ centerContent }) {
     const videoRef = useRef(null);
     const canvasRef = useRef(null);
     const navigate = useNavigate();
@@ -156,34 +158,41 @@ function Picture() {
     }
 
   return (
-    <div>
+    <section id="frame16">
+        <Navbar />
         {!isPreviewing ? (
-          <video ref={videoRef} autoPlay playsInline className='w-screen h-screen'/>
-        ) : (
-          <img src={captured} alt="Captured" className='w-screen h-screen'/>
-        )}
-        {!isPreviewing ? (
-        <div className='takepic-box'>
-            <span className='takepic-text'>Take Picture</span>
-            <div className='takepic-button'>
-                <img onClick={captureImage} style={{ cursor: 'pointer' }} src="/CameraB.png" alt="CameraB" />
+            <div className='picture'>
+                <Link to='/results'>
+                    <Buttonback />
+                </Link>
+                <video ref={videoRef} autoPlay playsInline className='w-screen h-screen'/>
+                <div className='takepic-box'>
+                    <span className='takepic-text'>Take Picture</span>
+                    <div className='takepic-button'>
+                        <img onClick={captureImage} style={{ cursor: 'pointer' }} src="/CameraB.png" alt="CameraB" />
+                    </div>
+                </div>
             </div>
-        </div>
         ) : (
-        <div className='Shot'>
-            <div className='Shotg'>Great Shot!</div>
-            <div className='Shotp'>Preview</div>
-            <button onClick={handleRetake} className='tryAgain'>
-                <p className='Shotr'>Retake</p>
-            </button>
-            <button onClick={handleConfirm} className='useShot'>
-                <div className='Shots'>Use this Photo</div>
-            </button>
-        </div>
+            <div>
+                <div className='Shot'>
+                    <div className='Shotg'>Great Shot!</div>
+                    <img src={captured} alt="Captured" className='w-screen h-screen'/>
+                </div>
+                <div className='Shot'>
+                    <div className='Shotp'>Preview</div>
+                    <button onClick={handleRetake} className='tryAgain'>
+                        <p className='Shotr'>Retake</p>
+                    </button>
+                    <button onClick={handleConfirm} className='useShot'>
+                        <div className='Shots'>Use this Photo</div>
+                    </button>
+                </div>
+            </div>
         )}
         <canvas ref={canvasRef} style={{ display: 'none' }} />
         {demographicData && <Demographic demographicData={demographicData} />}
-    </div>
+    </section>
   )
 }
 
