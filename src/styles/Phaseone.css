@@ -8,7 +8,7 @@
 }
 
 body, html {
-  overflow-x: hidden !important;
+  overflow: hidden;
 }
 
 #frame1, #frame6 {
@@ -32,7 +32,7 @@ a {
 
 .Sophisticated_skincare {
   font-weight: 400;
-  font-size: 100px;
+  font-size: 80px;
   line-height: 120px;
   text-align: center;
   letter-spacing: -0.07em;
@@ -145,11 +145,11 @@ a {
 }
 
 .Rectangle10 {
-  left: -320px;
+  left: -300px;
 }
 
 .Rectangle2 {
-  right: -289px;
+  right: -300px;
 }
 
 .Rectanglehandlerright {
@@ -417,12 +417,9 @@ a {
 }
 
 @media (max-width: 1920px) {
-  .Rectangle10 {
-    left: -235px;
-  }
-
-  .Rectangle2 {
-    right: -235px;
+  .Rectangle10, .Rectangle2 {
+    width: 602px;
+    height: 602px;
   }
 }
 
@@ -430,9 +427,8 @@ a {
   .Rectangle10 {
     left: -330px;
   }
-
   .Rectangle2 {
-    right: -290px;
+    right: -260px;
   }
   .Auto_layout_test_button-icon-text-shrunk {
     margin-right: 100px;
