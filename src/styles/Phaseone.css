@@ -8,7 +8,7 @@
 }
 
 body, html {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #frame1, #frame6 {
