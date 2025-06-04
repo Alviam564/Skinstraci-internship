@@ -7,18 +7,15 @@
 }
 
 #frame15 {
-  position: relative;
-  width: 99vw;
-  max-width: 1920px;
-  height: 100vh;
   background: #FFFFFF;
 }
 
 #frame16 {
   position: relative;
-  width: 100vw;
+  width: 99vw;
   max-width: 1920px;
-  height: 100vh;
+  height: 99vh;
+  max-height: 1080px;
   background: #1a1b1a;
 }
 
@@ -566,7 +563,9 @@
   }
 
   #frame16 .Auto_layout_back_button-icon-text-shrunk {
-    top: 100px; 
+    top: 0px; 
+    right: 200px;
+    left: 0;
   }
 
   .Shot {

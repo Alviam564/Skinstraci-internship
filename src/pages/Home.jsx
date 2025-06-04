@@ -43,55 +43,47 @@ useEffect(() => {
     <section id="frame1">
       <Navbar />
       <div>
-        <div className='hidden'>
-          <div className='rombuses'>
-          <div className='Rectangle18' />
-          <div className='Rectangle10-2' />
-          <div className='Rectangle17-2' />
-        </div>
-      </div>
-      <div className='title-wrapper'>
-        <div className='Sophisticated_skincare'>
-          Sophisticated Skincare
-        </div>
-      </div>
-      </div>
-      <p className='SkinstricP'>
-        Skinstric developed an A.I. that creates a highly-personalised routine tailored to what your skin needs.
-      </p>
-      <div>
-        <div className='Rectangle10' />
+        <div className='rombuses'>
+          <div className='Rectangle18 hidden' />
+          <div className='Rectangle10-2 hidden' />
+          <div className='Rectangle17-2 hidden' />
+          <div className='Rectangle10' />
           <div className='Auto_layout_button-icon-text-shrunk'>
-          <div className='Rectanglehandler'>
-            <div className='Inside_auto_layout1' />
-            <div className='Rectangle16-L' />
-            <div className='Rectangle17-L' />
-            <div className='Rectangle13-L' />
-            <div className='Polygon1-L' />
-          </div>
-          <div>
-            <div className='discoverai'>Discover A.I.</div>
-            <div className='Inside_auto_layout2' />
-          </div>
-        </div>
-      </div>
-      <div>
-        <div className='diamond-wrapper'>
-          <div className='Rectangle2' />
-        </div>
-        <Link to ="/testing">
-          <div className='Auto_layout_test_button-icon-text-shrunk'>
-          <div className='Taketest'>Take Test</div>
-          <div className='Inside_auto_layout1' />
-            <div className='Rectanglehandler'>
-              <div className='Inside_auto_layout2' />
-              <div className='Rectangle16-R' />
-              <div className='Rectangle17-R' />
-              <div className='Rectangle13-R' />
-              <div className='Polygon1-R' />
+            <div className='Rectanglehandlerright'>
+              <div className='Rectangle16-L'>
+                <div className='Rectangle17-L'> 
+                  <div className='Polygon1-L' />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className='discoverai'>Discover A.I.</div>
             </div>
           </div>
-        </Link>
+          <div className='title-wrapper'>
+            <div className='Sophisticated_skincare'>
+              Sophisticated Skincare
+            </div>
+          </div>
+            <div className='Rectangle2' />
+            <Link to ="/testing">
+              <div className='Auto_layout_test_button-icon-text-shrunk'>
+                <div>
+                  <div className='Taketest'>Take Test</div>
+                </div>
+                <div className='Rectanglehandlerleft'>
+                  <div className='Rectangle16-R'>
+                    <div className='Rectangle17-R'>
+                      <div className='Polygon1-R' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+        </div>
+        <p className='SkinstricP'>
+          Skinstric developed an A.I. that creates a highly-personalised routine tailored to what your skin needs.
+        </p>
       </div>
     </section>
   )

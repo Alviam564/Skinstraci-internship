@@ -1,37 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-* {font-family: 'Roboto';
+* {
+  font-family: 'Roboto';
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-#frame1, #frame6 {
-  width: 99vw;
-  max-width: 1920px;
-  height: 100vh;
-  background: #FFFFFF;
-  overflow: hidden;
+body, html {
+  overflow-x: hidden !important;
 }
 
 #frame1, #frame6 {
-  width: 99vw;
-  max-width: 1920px;
-  height: 100vh;
   background: #FFFFFF;
-  overflow: hidden;
 }
 
 a {
   text-decoration: none;
 }
 
-.SkinstricP{
-  position: absolute;
-  width: 316px;
-  height: 72px;
-  left: 40px;
-  top: 700px;
+.SkinstricP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-weight: 700;
   font-size: 13px;
   line-height: 23px;
@@ -40,20 +31,15 @@ a {
 }
 
 .Sophisticated_skincare {
-  position: absolute;
-  width: 673px;
-  height: 165px;
-  left: 450px;
-  top: 290px;
   font-weight: 400;
   font-size: 100px;
   line-height: 120px;
   text-align: center;
   letter-spacing: -0.07em;
   color: #1A1B1C;
-  transform: 0.5s ease, opacity 0.5s ease;
   animation: fadefromup 1.5s ease-out;
 }
+
 @keyframes fadefromup {
   0% {
     opacity: 0;
@@ -66,17 +52,20 @@ a {
 }
 
 .header1 {
-  position: absolute;
-  width: 1600px;
-  height: 59px;
-  left: 0px;
-  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.header2 {
+  display: flex;
+  justify-content: center;
+  margin-left: 8%;
 }
 
 .Skinstric {
-  left: 90px;
-  top: 35px;
-  position: absolute;
+  margin-right: 10px;
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
@@ -84,61 +73,54 @@ a {
   color: #1A1B1C;
 }
 
-.location {
-  position: absolute;
-  width: 61px;
-  height: 17px;
-  left: 50px;
-  top: 12px;
-  opacity: 0.6;
-}
-
 .Auto_layout_introplacer {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 6px;   
-  position: absolute;
-  width: 61px;
-  height: 17px;
-  left: 117px;
-  top: 23px;
+  gap: 6px;
 }
 
 .Rectangle6 {
   box-sizing: border-box;
   width: 4px;
-  height: 17px;    
+  height: 17px;
   border-width: 1px 1px 1px 0px;
   border-style: solid;
   border-color: #1A1B1C;
   border-radius: 2px;
   transform: rotate(180deg);
 }
-  
-.Inside_auto_layout1 {
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
 
 .Intro {
-  width: 41px;
-  height: 16px;    
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: -0.02em;
-  text-transform: uppercase;   
+  text-transform: uppercase;
   color: #1A1B1C;
+  opacity: 0.6;
 }
 
-.Inside_auto_layout2{
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+.button-code {
+  display: flex;
+  justify-content: end;
+  margin-right: 11%;
+}
+
+.Auto_layout_center_button-simple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+  background: #1A1B1C;
+}
+
+.Button_enter {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #FCFCFC;
 }
 
 .Rectangle8 {
@@ -152,172 +134,78 @@ a {
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.Inside_auto_layout3{
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-}
-
-.Auto_layout_center_button-simple {
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 16px;
-  gap: 8px;
+.Rectangle2,
+.Rectangle10 {
   position: absolute;
-  width: 92px;
-  height: 32px;
-  left: 1425px;
-  top: 28px;
-  background: #1A1B1C;
-}
-
-.Button_enter{
-  font-style: normal;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 16px;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;    
-  color: #FCFCFC;
-}
-  
-.Button_code{
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #1A1B1C;
-  opacity: 0.7;
-}
-
-.diamond-wrapper {
-  width: 231px;
-  height: 462px;
-  left: 1369px;
-  top: 150px;
-  position: relative;
-}
-
-.Rectangle2{
-  position: absolute;
-  width: 462px;
-  height: 462px;
-  opacity: 0.6;   
+  width: 470px;
+  height: 470px;
+  opacity: 0.6;
   border: 2px solid #A0A4AB;
   transform: rotate(-45deg);
 }
 
-.Rectangle10{
-  position: absolute;
-  width: 462px;
-  height: 462px;
-  left: -250px;
-  top: 150px;
-  opacity: 0.6;   
-  border: 2px solid #A0A4AB;
-  border-radius: 0px;
+.Rectangle10 {
+  left: -320px;
+}
+
+.Rectangle2 {
+  right: -289px;
+}
+
+.Rectanglehandlerright {
+  display: flex;
+  margin-right: 10px;
   transform: rotate(-45deg);
 }
 
-.Auto_layout_button-icon-text-shrunk{
+.Rectanglehandlerleft {
   display: flex;
-  flex-direction: row;
+  margin-left: 10px;
+  transform: rotate(-45deg);
+}
+
+.Auto_layout_button-icon-text-shrunk,
+.Auto_layout_test_button-icon-text-shrunk {
+  display: flex;
   align-items: center;
-  padding: 0px;
-  gap: 10px;
-  position: absolute;
-  width: 200px;
-  height: 44px;
-  left: 87px;
-  top: 360px;
   transition: opacity 0.5s ease;
-
-}
-
-.discoverai{
-  width: 130px;
-  height: 16px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 16px;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #1A1B1C;
-  opacity: 0.7;
-}
-
-.Rectanglehandler {    
-  width: 44px;
-  height: 44px;
-}
-
-.Rectangle16-L{
-  box-sizing: border-box;
-  position: absolute;
-  width: 31px;
-  height: 31px;
-  left: 7px;
-  top: 7px;   
-  border: 1px solid #1A1B1C;
-  transform: rotate(-45deg);
-}
-
-.Rectangle17-L{
-  box-sizing: border-box;
-  position: absolute;
-  width: 31px;
-  height: 31px;
-  left: 7px;
-  top: 7px;   
-  border: 1px solid #1A1B1C;
-  transform: rotate(-45deg);
-}
-
-.Rectangle13-L{
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  left: 15px;
-  top: 15px;
-  transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
-}
-
-.Polygon1-L{
-  position: absolute;
-  width: 9.43px;
-  height: 10.89px;
-  left: 16px;
-  top: 17px;   
-  background: #1A1B1C;
-  transform: rotate(-90deg);
-  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 }
 
 .Auto_layout_test_button-icon-text-shrunk {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 16px;    
-  position: absolute;
-  width: 145px;
-  height: 44px;
-  left: 1383px;
-  top: 367px;
+  margin-right: 50px;
 }
 
-.Taketest{
+.Rectangle16-L, .Rectangle16-R,
+.Rectangle17-L, .Rectangle17-R {
+  box-sizing: border-box;
+  width: 31px;
+  height: 31px;
+  border: 1px solid #1A1B1C;
+}
+
+.Polygon1-L, .Polygon1-R {
   position: absolute;
-  width: 99px;
-  height: 16px;
-  left: -50px;
-  top: 7px;
+  width: 9.43px;
+  height: 10.89px;
+  background: #1A1B1C;
+}
+
+.Polygon1-L {
+  left: 9px;
+  top: 9px;
+  transform: rotate(-45deg);
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.Polygon1-R {
+  left: 12px;
+  top: 11px;
+  transform: rotate(135deg);
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.discoverai, .Taketest {
+  text-align: center;
   font-weight: 600;
   font-size: 20px;
   line-height: 16px;
@@ -327,150 +215,64 @@ a {
   opacity: 0.7;
 }
 
-.Rectangle16-R {
-  box-sizing: border-box;
-  position: absolute;
-  width: 31px;
-  height: 31px;
-  left: 66px;
-  top: 0px;
-  border: 1px solid #1A1B1C;
-  transform: rotate(-45deg);   
-}
-
-.Rectangle17-R {
-  box-sizing: border-box;
-  position: absolute;
-  width: 31px;
-  height: 31px;
-  left: 66px;
-  top: -1px;    
-  border: 1px solid #1A1B1C;
-  transform: rotate(-45deg);
-}
-
-.Rectangle13-R {        
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  left: 74px;
-  top: 6px; 
-  transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
-}
-
-.Polygon1-R {
-  position: absolute;
-  width: 9.43px;
-  height: 10.89px;
-  left: 79px;
-  top: 9px;
-  background: #1A1B1C;
-  transform: rotate(90deg);
-  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-
-}
-
-.start_analysis {   
-  position: absolute;
-  width: 227px;
-  height: 23px;
-  left: 105px;
-  top: 79px;    
+.start_analysis {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 18%;
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
-  display: flex;
-  align-items: center;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #1A1B1C;    
+  color: #1A1B1C;
 }
 
 .rombuses {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 560px;
+}
+
+.Rectangle18,
+.Rectangle10-2,
+.Rectangle17-2 {
   position: absolute;
-  width: 495px;
-  height: 501px;
-  left: 520px;
-  top: 95px;
-  transform: rotate(-45deg);
+  border: 2px dashed #A0A4AB;
+  animation: spin 30s linear infinite;
+  pointer-events: none;
 }
 
 .Rectangle18 {
-  position: absolute;
   width: 300.78px;
   height: 320.99px;
-  top: 30%;
-  left: 20%;
-  border: 2px dashed #A0A4AB;
-  animation: spin 15s linear infinite
+  animation-duration: 15s;
 }
- @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
 
 .Rectangle10-2 {
-  position: absolute;
   width: 404.78px;
   height: 420.99px;
-  top: 20%;
-  left: 10%;
   opacity: 0.6;
-  border: 2px dashed #A0A4AB;
-  border-radius: 0px;
-  animation: spin 20s linear infinite
+  animation-duration: 20s;
 }
- @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
 
 .Rectangle17-2 {
-  position: absolute;
   width: 504.78px;
   height: 520.99px;
-  top: 10%;
-  left: 0%;
   opacity: 0.3;
-  border: 2px dashed #A0A4AB;
-  animation: spin 30s linear infinite
 }
- @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
-
-.IntroduceYourself {   
-  width: 350px;
-  height: 56.67px;
-  left: 625px;
-  top: 359.33px;
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.click_to_type1 {
-  display: flex;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #1A1B1C;   
-  opacity: 0.4;
-}
-
+.click_to_type1,
 .click_to_type2 {
   display: flex;
   justify-content: center;
@@ -483,129 +285,79 @@ a {
   opacity: 0.4;
 }
 
-.yourname{    
-  position: absolute;
-  left: 39.05%;
-  right: 35.44%;
-  top: 45%;
+.yourname {
+  display: flex;
+  flex-direction: column;
+  margin-right: 300px;
   font-weight: 300;
   font-size: 50px;
   line-height: 64px;
   letter-spacing: -0.07em;
-  color: #1A1B1C;   
+  color: #1A1B1C;
 }
 
 .yourcity {
-  position: absolute;
-  left: 38.19%;
-  right: 34.69%;
-  top: 45.7%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 320px;
   font-weight: 300;
   font-size: 45px;
   line-height: 64px;
-  text-align: center;
   letter-spacing: -0.07em;
   color: #1A1B1C;
 }
 
-.Line1,.Line2 {
-  position: absolute;
-  width: 356px;
+.Line1, .Line2 {
   height: 1px;
   background: #1A1B1C;
-  left: 40.5%;
-  top: 55%;
+  opacity: 1;
 }
 
 .input {
   background: transparent;
   border: none;
   font-size: inherit;
-  width: 100%;
   outline: none;
   color: #1A1B1C;
   text-align: center;
 }
 
-.Next{    
-  position: absolute;
-  top: 310px;
-  left: 627px;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 45px;
-  letter-spacing: -0.07em;
-  text-align: center;
-  color: #1A1B1C;   
-}
-
-.Loading {    
-  position: absolute;
-  top: 350px;
-  left: 687px;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 45px;
-  letter-spacing: -0.07em;
-  text-align: center;
-  color: #1A1B1C;   
-}
-
 .Auto_layout_back_button-icon-text-shrunk {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 0px;
-  gap: 10px;
-  position: absolute;
-  left: 100px;
-  top: 658px;
+  transition: opacity 0.5s ease;
 }
 
-.Rectangle16-b {
+.Rectangle16-b, .Rectangle17-b {
   box-sizing: border-box;
-  position: absolute;
   width: 31px;
   height: 31px;
-  left: 0px;
-  top: 8px; 
   border: 1px solid #1A1B1C;
-  transform: rotate(-45deg);   
 }
   
-.Rectangle17-b {
-  box-sizing: border-box;
-  position: absolute;
-  width: 31px;
-  height: 31px;
-  left: 0px;
-  top: 8px;    
-  border: 1px solid #1A1B1C;
-  transform: rotate(-45deg);
-}
-
-
-.Rectangle13-b {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  left: 8px;
-  top: 16px;    
-  transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
-}
-
-.Polygon2-b {
+.Polygon2-b, .Polygon2-p {
   position: absolute;
   width: 9.43px;
   height: 10.89px;
-  left: 9px;
-  top: 18px;
   background: #1A1B1C;
-  transform: rotate(-90deg);
+}
+
+.Polygon2-b {
+  left: 9px;
+  top: 9px;
+  transform: rotate(-45deg);
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.Polygon2-p {
+  left: 12px;
+  top: 11px;
+  transform: rotate(135deg);
   clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 }
 
 .Back {
+  text-align: center;
   font-weight: 600;
   font-size: 20px;
   line-height: 16px;
@@ -613,69 +365,44 @@ a {
   text-transform: uppercase;    
   color: #1A1B1C;
   opacity: 0.7;
-  border: none;
-  box-shadow: none;
-  outline: none;
+  margin-left: 5px
+}
+
+.Next, .Loading {    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: -0.07em;
+  text-align: center;
+  color: #1A1B1C;
+}
+
+.Next {
+  margin-left: 2%;
+}
+
+.Loading {
+  margin-right: 24%;
 }
 
 .Auto_layout_proceed_button-icon-text-shrunk {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 0px;
-  gap: 10px;
-  position: absolute;
-  left: 1380px;
-  top: 656px;
+  transition: opacity 0.5s ease;
 }
 
-#frmae12 .Auto_layout_button-icon-text-shrunk {
-  width: 20%;
-}
-
-.Rectangle16-p {
+.Rectangle16-p, .Rectangle17-p {
   box-sizing: border-box;
-  position: absolute;
   width: 31px;
   height: 31px;
-  top: 7px; 
   border: 1px solid #1A1B1C;
-  transform: rotate(-45deg);
-}
-
-
-.Rectangle17-p {
-  box-sizing: border-box;
-  position: absolute;
-  width: 31px;
-  height: 31px;
-  top: 7px;
-  border: 1px solid #1A1B1C;
-  transform: rotate(-45deg);
-}
-
-.Rectangle13-p {
-  box-sizing: border-box;
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  left: 10px;
-  top: 15px;
-  transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
-}
-
-.Polygon2-p {
-  position: absolute;
-  width: 9.43px;
-  height: 10.89px;
-  left: 108px;
-  top: 17px;
-  background: #1A1B1C;
-  transform: rotate(90deg);
-  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 }
 
 .Proceed {
+  text-align: center;
   font-weight: 600;
   font-size: 20px;
   line-height: 16px;
@@ -689,59 +416,84 @@ a {
   opacity: 0;
 }
 
-@media (max-width: 1440px) {
-  .yourname, .yourcity {
-    left: 44%;
-    top: 40%;
-    width: 370px;
+@media (max-width: 1920px) {
+  .Rectangle10 {
+    left: -235px;
   }
-  .Line1, .Line2 {
-    position: absolute;
-    left: 44%;
-    top: 49%;
-    width: 367px;
-    height: 1px;
+
+  .Rectangle2 {
+    right: -235px;
   }
 }
 
+@media (max-width: 1440px) {
+  .Rectangle10 {
+    left: -330px;
+  }
+
+  .Rectangle2 {
+    right: -290px;
+  }
+  .Auto_layout_test_button-icon-text-shrunk {
+    margin-right: 100px;
+  } 
+
+}
+
+@media (max-width: 1024px) {
+  .Auto_layout_button-icon-text-shrunk {
+    margin-left: 20px;
+  }
+  .Auto_layout_test_button-icon-text-shrunk {
+    margin-right: 100px;
+  }
+
+  .start_analysis {
+    width: 22%;
+  }
+
+  .yourname {
+    margin-right: 155px;
+  }
+  .yourcity {
+    margin-right: 170px;
+  }
+
+}
+
 @media (max-width: 768px) {
-  #frame1, #frame6{
+  #frame1, #frame6 {
     padding: 20px;
   }
 
   .header1 {
-    width: 100%;
-    height: auto;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .Skinstric {
-    position: relative;
-    left: 70px;
-    top: 16px;
     font-size: 14px;
-  }
-
-  .Auto_layout_center_button-simple {
-    left: 600px;
-  }
-
-  .Sophisticated_skincare {
-    width: 90%;
-    height: 1%;
-    left: 10%;
-    top: 355px;
-    font-size: 40px;
-    line-height: 50px;
-    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 8px;
   }
 
   .SkinstricP {
-    height: 0px;
-    position: relative;
-    top: -235px;
-    left: 229px;
-    font-size: 10px;
+    justify-self: center;
+    width: 220px;
+    line-height: 18px;
     text-align: center;
+  }
+
+  .Sophisticated_skincare {
+    font-size: 40px;
+    line-height: 48px;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .Auto_layout_center_button-simple {
+    padding: 6px 12px;
   }
 
   .Rectangle10,
@@ -749,33 +501,27 @@ a {
   .discoverai,
   .Rectangle16-L,
   .Rectangle17-L,
-  .Rectangle13-L,
-  .Polygon1-L  {
+  .Polygon1-L {
     display: none;
   }
 
   .rombuses {
-    position: relative;
-    width: 495px;
-    height: 501px;
-    left: 100px;
-    top: 50px;
-    transform: rotate(-45deg);
+    flex-direction: column;
+    justify-content: center;
+    transform: rotate(0deg);
+    padding: 20px 0;
   }
 
   .Rectangle10-2 {
     width: 404.78px;
     height: 420.99px;
-    top: 20%;
     opacity: 0.6;
     border: 2px dashed #A0A4AB;
-    border-radius: 0px;
   }
 
   .Rectangle17-2 {
     width: 504.78px;
     height: 520.99px;
-    top: 10%;
     opacity: 0.3;
     border: 2px dashed #A0A4AB;
   }
@@ -783,415 +529,210 @@ a {
   .Rectangle18 {
     width: 300.78px;
     height: 320.99px;
-    top: 30%;
     border: 2px dashed #A0A4AB;
   }
 
-  .Auto_layout_center_button-icon-text-shrunk {
-    left: 350px;
-    top: 450px;
-  }
-
+  .Auto_layout_center_button-icon-text-shrunk,
   .Auto_layout_test_button-icon-text-shrunk {
-    top: 420px;
-    left: 350px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 0;
   }
+
   .Taketest {
-    width: 100px;
-    position: static;
     font-size: 16px;
+    width: auto;
     text-align: center;
-  }
-
-  .Rectangle16-R,
-  .Rectangle17-R {
-    left: 112px;
-    top: 6px;
-  }
-
-  .Rectangle13-R,
-  .Polygon1-R {
-    left: 120px;
-    top: 14px;
-  }
-
-  .Polygon1-R {
-    left: 125px;
-    top: 16px
   }
 
   .start_analysis {
-    left: 90px;
-    top: 50px;
-    text-align: center;
-    margin: 20px 0;
+    align-items: center;
+    width: 100%;
     font-size: 14px;
+    text-align: center;
+    margin: 10px 0;
   }
 
-  .yourname, .yourcity {
-    width: 100%;
+  .yourname,
+  .yourcity {
+    margin: 0 auto;
     font-size: 28px;
     line-height: 36px;
     text-align: center;
-    right: 0px;
-    left: 20px;
-    top: 310px;
+    width: 90%;
   }
 
-  .Line1, .Line2 {
-    top: 53%;
-    left: 37%;
-    width: 250px;
+  .Line1,
+  .Line2 {
+    width: 60%;
+    margin: 0px auto 10px auto;
   }
 
   .input {
-    font-size: 24px;
+    font-size: 18px;
+    width: 100%;
     text-align: center;
   }
 
+  .Next,
+  .Loading {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 10px auto;
+  }
+
+  .Back,
+  .Proceed {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .Auto_layout_proceed_button-icon-text-shrunk,
   .Auto_layout_back_button-icon-text-shrunk {
-    width: 100px;
-    position: relative;
-    left: 100px;
-    top: -6px;
+    align-items: center;
+    margin: 10px auto 20px auto;
   }
 
-  .Auto_layout_proceed_button-icon-text-shrunk {
-    left: 550px;
-    top: 525px;
-  }
-
-  .Next, .Loading, .Loading2 {
-    position: relative;
-    top: -240px;
-    left: 20px;
-  }
-
-  .Button_enter,
-  .Button_code {
-    font-size: 10px;
-  }
-  
   .hidden {
     opacity: 1;
   }
 }
 
 @media (max-width: 425px) {
+  #frame1, #frame6 {
+    padding: 10px;
+  }
 
-  #frame6 {
-  width: 100vw;
-}
   .header1 {
-    width: 100%;
-    height: auto;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .Skinstric {
-    position: relative;
-    left: 10px;
-    top: 16px;
-    font-size: 14px;
-  }
-
-  .Auto_layout_test_button-icon-text-shrunk {
-    left: 150px;
-    top: 450px;
-  }
-
-  .Auto_layout_center_button-simple {
-    left: 300px;
-  }
-
-  .Auto_layout_introplacer {
-    left: 50px;
-  }
-
-  .Sophisticated_skincare {
-    width: 90%;
-    height: 1%;
-    left: 5%;
-    top: 355px;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 12px;
     text-align: center;
   }
 
   .SkinstricP {
-    height: 0px;
-    position: relative;
-    top: -235px;
-    left: 33px;
-    font-size: 10px;
+    justify-self: center;
+    width: 220px;
+    line-height: 16px;
     text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .Sophisticated_skincare {
+    font-size: 28px;
+    line-height: 34px;
+    width: 100%;
+    text-align: center;
+    margin: 16px 0;
+  }
+
+  .Auto_layout_center_button-simple {
+    padding: 4px 10px;
+    font-size: 12px;
+    margin: 10px auto;
   }
 
   .Rectangle10,
+  .Rectangle2,
   .discoverai,
   .Rectangle16-L,
   .Rectangle17-L,
-  .Rectangle13-L,
-  .Polygon1-L  {
+  .Polygon1-L {
     display: none;
   }
 
   .rombuses {
-    position: relative;
-    width: 495px;
-    height: 501px;
-    left: -100px;
-    top: 50px;
-    transform: rotate(-45deg);
+    flex-direction: column;
+    justify-content: center;
+    transform: rotate(0deg);
+    padding: 10px 0;
+    width: 100%;
   }
 
   .Rectangle10-2 {
-    width: 404.78px;
-    height: 420.99px;
-    top: 20%;
+    width: 300px;
+    height: 320px;
     opacity: 0.6;
     border: 2px dashed #A0A4AB;
-    border-radius: 0px;
   }
 
   .Rectangle17-2 {
-    width: 504.78px;
-    height: 520.99px;
-    top: 10%;
+    width: 350px;
+    height: 360px;
     opacity: 0.3;
     border: 2px dashed #A0A4AB;
   }
-  
+
   .Rectangle18 {
-    width: 300.78px;
-    height: 320.99px;
-    top: 30%;
+    width: 240px;
+    height: 260px;
     border: 2px dashed #A0A4AB;
   }
 
-  .Auto_layout_center_button-icon-text-shrunk {
-    left: 150px;
-    top: 450px;
+  .Auto_layout_center_button-icon-text-shrunk,
+  .Auto_layout_test_button-icon-text-shrunk {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+    margin-right: 0;
+    font-size: 12px;
   }
 
   .Taketest {
-    width: 100px;
-    position: static;
-    font-size: 16px;
+    font-size: 14px;
+    width: auto;
     text-align: center;
-  }
-
-  .Rectangle16-R,
-  .Rectangle17-R {
-    left: 112px;
-    top: 6px;
-  }
-
-  .Rectangle13-R,
-  .Polygon1-R {
-    left: 120px;
-    top: 14px;
-  }
-
-  .Polygon1-R {
-    left: 125px;
-    top: 16px
+    margin: 6px auto;
   }
 
   .start_analysis {
-    width: 100%;
-    left: 30px;
-    top: 50px;
+    font-size: 12px;
     text-align: center;
-    margin: 20px 0;
-    font-size: 14px;
+    margin: 8px 0;
   }
 
-  .yourname, .yourcity {
-    font-size: 28px;
-    line-height: 36px;
-    text-align: center;
-    left: 1px;
-    top: 325px;
-    width: 100%;
-  }
-
-  .Line1, .Line2 {
-    top: 55%;
-    left: 20%;
-  }
-
-  .input {
-    font-size: 24px;
-    text-align: center;
-  }
-
-  .Auto_layout_back_button-icon-text-shrunk {
-    position: absolute;
-    left: 60px;
-    top: 580px;
-  }
-
-  .Auto_layout_proceed_button-icon-text-shrunk {
-    left: 280px;
-    top: 650px;
-  }
-
-  #frame12 .Auto_layout_proceed_button-icon-text-shrunk {
-    top: 595px;
-    right: 10px;
-  } 
-
-  .Rectangle13-p {
-    left: 113px;
-  }
-
-  .Next, .Loading {
-    position: relative;
-    left: 1px;
-  }
-
-  .Button_enter,
-  .Button_code {
-    font-size: 10px;
-  }
-}
-
-@media (max-width: 320px) {
-  .header1 {
-    width: 100%;
-    height: auto;
-  }
-
-  .Skinstric {
-    position: relative;
-    left: 10px;
-    top: 16px;
-    font-size: 14px;
-  }
-
-  .Auto_layout_center_button-simple {
-    left: 220px;
-  }
-
-  .Auto_layout_introplacer {
-    left: 50px;
-  }
-
-  .Sophisticated_skincare {
+  .yourname,
+  .yourcity {
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 28px;
     width: 90%;
-    height: 1%;
-    left: 5%;
-    top: 355px;
-    font-size: 40px;
-    line-height: 50px;
     text-align: center;
   }
 
-  .SkinstricP {
-    height: 0px;
-    position: relative;
-    top: -235px;
-    left: -15px;
-    font-size: 10px;
-    text-align: center;
-  }
-
-  .Rectangle10,
-  .discoverai,
-  .Rectangle16-L,
-  .Rectangle17-L,
-  .Rectangle13-L,
-  .Polygon1-L  {
-    display: none;
-  }
-
-  .rombuses {
-    position: relative;
-    width: 495px;
-    height: 501px;
-    left: -140px;
-    top: 50px;
-    transform: rotate(-45deg);
-  }
-
-  .Rectangle10-2 {
-    width: 404.78px;
-    height: 420.99px;
-    top: 20%;
-    opacity: 0.6;
-    border: 2px dashed #A0A4AB;
-    border-radius: 0px;
-  }
-
-  .Rectangle17-2 {
-    width: 504.78px;
-    height: 520.99px;
-    top: 10%;
-    opacity: 0.3;
-    border: 2px dashed #A0A4AB;
-  }
-  
-  .Rectangle18 {
-    width: 300.78px;
-    height: 320.99px;
-    top: 30%;
-    border: 2px dashed #A0A4AB;
-  }
-
-  .Auto_layout_test_button-icon-text-shrunk {
-    left: 100px;
-    top: 470px;
-    gap: 0px;
-  }
-
-  .Taketest {
-    width: 100px;
-    position: static;
-    font-size: 16px;
-    text-align: center;
-  }
-
-  .Rectangle16-R,
-  .Rectangle17-R {
-    left: 112px;
-    top: 6px;
-  }
-
-  .Rectangle13-R,
-  .Polygon1-R {
-    left: 120px;
-    top: 14px;
-  }
-
-  .Polygon1-R {
-    left: 125px;
-    top: 16px
-  }
-
-  .yourname, .yourcity {
-    font-size: 28px;
-    line-height: 36px;
-    text-align: center;
-    left: 11px;
-    width: 100%;
-  }
-
-  .Line1, .Line2 {
-    right: 10%;
-    left: 15%;
+  .Line1,
+  .Line2 {
+    width: 60%;
+    margin: 0 auto 8px auto;
   }
 
   .input {
-    font-size: 24px;
+    font-size: 16px;
+    width: 100%;
     text-align: center;
   }
 
-  .Auto_layout_proceed_button-icon-text-shrunk {
-    left: 180px;
+  .Next,
+  .Loading {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 8px auto;
   }
 
-  .Button_enter,
-  .Button_code {
-    font-size: 10px;
+  .Back,
+  .Proceed {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  .Auto_layout_proceed_button-icon-text-shrunk,
+  .Auto_layout_back_button-icon-text-shrunk {
+    font-size: 12px;
   }
 }

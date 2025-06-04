@@ -7,10 +7,6 @@
 }
 
 #frame9, #frame12, #frame13 {
-  position: relative;
-  width: 100vw;
-  max-width: 1920px;
-  height: 100vh;
   background: #FFFFFF;
 }
 
@@ -1053,6 +1049,11 @@ color: white;
    left: 120px ;
   }
 
+  #frame9 .Auto_layout_back_button-icon-text-shrunk {
+    top: -200px;
+    left: 140px;
+  }
+
   #frame12 .Auto_layout_back_button-icon-text-shrunk {
     top: 595px;
   }
@@ -1244,6 +1245,11 @@ color: white;
   .selectionText {
    left: 5px;
  }
+
+ #frame9 .Auto_layout_back_button-icon-text-shrunk {
+    top: -190px;
+    left: 90px;
+  }
 
  #frame12 .Auto_layout_back_button-icon-text-shrunk {
     left: 35px;

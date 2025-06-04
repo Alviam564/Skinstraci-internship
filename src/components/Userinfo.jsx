@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
-import Buttonproceed from './Buttonproceed';
 import { GoKebabHorizontal } from 'react-icons/go'
+import Buttonproceed from './Buttonproceed';
+import Buttonback from './Buttonback';
+import { Link } from 'react-router-dom';
 
 const Userinfo = () => {
   const [step, setStep] = useState(1);
@@ -44,41 +45,39 @@ const Userinfo = () => {
   };
 
   return (
-    <>
+    <div className='rombuses'>
+      <Link to="/">
+        <Buttonback />
+      </Link>
+      <div className='Rectangle18' />
+      <div className='Rectangle10-2' />
+      <div className='Rectangle17-2' />
       {!loading && step === 1 && (
-        <>
-          <div className='yourname'>
-            <div className='click_to_type1'>Click to type</div>
-            <form onSubmit={handleNameSubmit}>
-              <input className="input" type="text" placeholder="Enter your name" value={name} onChange={(e) => setName(e.target.value)} />
-            </form>
-          </div>
+        <div className='yourname'>
+          <div className='click_to_type1'>Click to type</div>
+          <form onSubmit={handleNameSubmit}>
+            <input className="input" type="text" placeholder="Enter your name" value={name} onChange={(e) => setName(e.target.value)} />
+          </form>
           <div className='Line1' />
-        </>
+        </div>
       )}
       {!loading && step === 2 && (
-        <>
-          <div className='yourcity'>
+        <div className='yourcity'>
           <div className='click_to_type2'> Where do you live?</div>
-            <form onSubmit={handleLocationSubmit}>
-              <input className="input" type="text" placeholder="Enter your location" value={location} onChange={(e) => setLocation(e.target.value)}/>
-            </form>
-          </div>
+          <form onSubmit={handleLocationSubmit}>
+            <input className="input" type="text" placeholder="Enter your location" value={location} onChange={(e) => setLocation(e.target.value)}/>
+          </form>
           <div className='Line2' />
-        </>
+        </div>
       )}
-
       {loading && ( 
-        <>
-          <div className='Loading'>
-            <p>Now Processing</p> 
-            <GoKebabHorizontal />
-          </div>
-        </>
+        <div className='Loading'>
+          <p>Now Processing</p> 
+          <GoKebabHorizontal />
+        </div>
       )}
-      <div>
-        {step === 3 && !loading && (
-          <>
+      {step === 3 && !loading && (
+        <>
           <div className='Next'>
             <div>Thank you!</div>
             <div>Proceed to the next step</div>
@@ -86,10 +85,9 @@ const Userinfo = () => {
           <Link to="/results">
             <Buttonproceed />
           </Link>
-          </>
-        )}
-      </div>
-    </>
+        </>
+      )}
+    </div>
   );
 };
 
