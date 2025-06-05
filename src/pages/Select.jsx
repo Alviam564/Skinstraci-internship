@@ -48,20 +48,23 @@ function Select() {
         <div className='apart'>
           <div>
             <Link to="/results">
-              <Buttonback />
+              <div className='back-button-wrapper'>
+                <Buttonback />
+              </div>
             </Link>
           </div>
           <div>
-
             <Link to="/summary" state={{ demographicData }}>
-              <div className='Auto_layout_proceed_button-icon-text-shrunk'>
-                <div>
-                  <div className='Proceed'>Get Summary</div>
-                </div>
-                <div className='Rectanglehandlerleft'>
-                  <div className='Rectangle16-p'>
-                    <div className='Rectangle17-p'>
-                      <div className='Polygon2-s' />
+              <div className='forward-button-wrapper'>
+                <div className='Auto_layout_proceed_button-icon-text-shrunk'>
+                  <div>
+                    <div className='Proceed'>Get Summary</div>
+                  </div>
+                  <div className='Rectanglehandlerleft'>
+                    <div className='Rectangle16-p'>
+                      <div className='Rectangle17-p'>
+                        <div className='Polygon2-s' />
+                      </div>
                     </div>
                   </div>
                 </div>

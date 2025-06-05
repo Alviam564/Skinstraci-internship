@@ -164,10 +164,6 @@ a {
   transition: opacity 0.5s ease;
 }
 
-.Auto_layout_test_button-icon-text-shrunk {
-  margin-right: 50px;
-}
-
 .Rectangle16-L, .Rectangle16-R,
 .Rectangle17-L, .Rectangle17-R {
   box-sizing: border-box;
@@ -318,6 +314,21 @@ a {
   transition: opacity 0.5s ease;
 }
 
+
+.back-button-wrapper {
+  position: absolute;
+  bottom: 11%;
+  left: 8%;
+  z-index: 10;
+}
+
+.forward-button-wrapper {
+  position: absolute;
+  bottom: 11%;
+  right: 8%;
+  z-index: 10;
+}
+
 .Rectangle16-b, .Rectangle17-b {
   box-sizing: border-box;
   width: 31px;
@@ -370,12 +381,8 @@ a {
   color: #1A1B1C;
 }
 
-.Next {
-  margin-left: 2%;
-}
-
 .Loading {
-  margin-right: 24%;
+  margin-right: 21%;
 }
 
 .Auto_layout_proceed_button-icon-text-shrunk {
@@ -414,13 +421,6 @@ a {
 }
 
 @media (max-width: 1024px) {
-  .Auto_layout_button-icon-text-shrunk {
-    margin-left: 20px;
-  }
-  .Auto_layout_test_button-icon-text-shrunk {
-    margin-right: 100px;
-  }
-
   .start_analysis {
     width: 22%;
   }
@@ -507,10 +507,7 @@ a {
 
   .Auto_layout_center_button-icon-text-shrunk,
   .Auto_layout_test_button-icon-text-shrunk {
-    flex-direction: column;
-    align-items: center;
     margin-top: 20px;
-    margin-right: 0;
   }
 
   .Taketest {
@@ -543,7 +540,6 @@ a {
   }
 
   .input {
-    font-size: 18px;
     width: 100%;
     text-align: center;
   }
@@ -560,12 +556,6 @@ a {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-  }
-
-  .Auto_layout_proceed_button-icon-text-shrunk,
-  .Auto_layout_back_button-icon-text-shrunk {
-    align-items: center;
-    margin: 10px auto 20px auto;
   }
 
   .hidden {
@@ -597,9 +587,7 @@ a {
   }
 
   .Sophisticated_skincare {
-    font-size: 28px;
-    line-height: 34px;
-    width: 100%;
+    font-size: 25px;
     text-align: center;
     margin: 16px 0;
   }
@@ -647,15 +635,6 @@ a {
     border: 2px dashed #A0A4AB;
   }
 
-  .Auto_layout_center_button-icon-text-shrunk,
-  .Auto_layout_test_button-icon-text-shrunk {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 12px;
-    margin-right: 0;
-    font-size: 12px;
-  }
-
   .Taketest {
     font-size: 14px;
     width: auto;
@@ -682,12 +661,6 @@ a {
   .Line2 {
     width: 60%;
     margin: 0 auto 8px auto;
-  }
-
-  .input {
-    font-size: 16px;
-    width: 100%;
-    text-align: center;
   }
 
   .Next,

@@ -63,7 +63,9 @@ function Results() {
       <div className='start_analysis'>To start Analysis</div>
       <div className='together'>
         <Link to="/">
-          <Buttonback />
+          <div className='back-button-wrapper'>
+            <Buttonback />
+          </div>
         </Link>
         <UserCamera showInfo={showInfo} setShowInfo={setShowInfo} centerContent={centerContent}/>
         <UserGallery centerContent={centerContent} handleFileChange={handleFileChange} dim={showInfo}/>

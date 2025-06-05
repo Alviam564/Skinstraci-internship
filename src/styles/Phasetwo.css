@@ -200,6 +200,7 @@
   width: 143px;
   height: 143px;
   background: #D2D2D2;
+  border: black 1px solid;
 }
 
 .Cosmetic_Concerns_option {
@@ -207,6 +208,7 @@
   width: 143px;
   height: 143px;
   background: #D2D2D2;
+  border: black 1px solid;
 }
 
 .Weather_option {
@@ -214,6 +216,7 @@
   width: 143px;
   height: 143px;
   background: #D2D2D2;
+  border: black 1px solid;
 }
 
 .Analysisdiamond {
@@ -225,8 +228,6 @@
 }
 
 .diamond {
-  width: 150px;
-  height: 150px;
   background-color: #e0e0e0;
   display: flex;
   align-items: center;
@@ -241,7 +242,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 90px;
+  gap: 80px;
 }
 
 .diamond span {
@@ -423,7 +424,6 @@ color: white;
   font-size: 32px;
   margin-top: 2%;
   margin-left: 2%;
-  line-height: 16px;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #1A1B1C;
@@ -619,15 +619,11 @@ color: white;
   }
 
   .diamond-row {
-    display: contents;
+    flex-direction: column;
   }
 
   .Analysisdiamond {
     gap: 70px;
-  }
-
-  .Rectangle18, .Rectangle10-2, .Rectangle17-2 {
-    opacity: 0;
   }
 
   .apart {
@@ -669,6 +665,9 @@ color: white;
   }
    .Demographics_title {
     font-size: 40px;
+  }
+  #frame12 .forward-button-wrapper {
+    right: 3%;
   }
 
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Userinfo from '../components/Userinfo'
 
-function Testing({ step, loading }) {
+function Testing() {
   return (
     <section id="frame6">
       <Navbar />

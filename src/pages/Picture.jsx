@@ -164,7 +164,9 @@ function Picture() {
         {!isPreviewing ? (
             <div className='picture'>
                 <Link to='/results'>
-                    <Buttonback onClick={stopCamera}/>
+                    <div className='back-button-wrapper'>
+                        <Buttonback onClick={stopCamera}/>
+                    </div>
                 </Link>
                 <video ref={videoRef} autoPlay playsInline className='w-screen h-screen'/>
                 <div className='takepic-box'>

@@ -19,18 +19,22 @@ function Summary() {
       <Demographic demographicData={demographicData}/>
       <div className='selectionfooter'>
         <Link to="/select">
-          <Buttonback />
+          <div className='back-button-wrapper'>
+            <Buttonback />
+          </div>
         </Link>
         <div className='selectionText'>If A.I. estimate is wrong, select the correct one</div>
         <Link to="/">
-          <div className='Auto_layout_proceed_button-icon-text-shrunk'>
-            <div>
-              <div className='Proceed'>Home</div>
-            </div>
-            <div className='Rectanglehandlerleft'>
-              <div className='Rectangle16-p'>
-                <div className='Rectangle17-p'> 
-                  <div className='Polygon2-h' />
+          <div className='forward-button-wrapper'>
+            <div className='Auto_layout_proceed_button-icon-text-shrunk'>
+              <div>
+                <div className='Proceed'>Home</div>
+              </div>
+              <div className='Rectanglehandlerleft'>
+                <div className='Rectangle16-p'>
+                  <div className='Rectangle17-p'> 
+                    <div className='Polygon2-h' />
+                  </div>
                 </div>
               </div>
             </div>

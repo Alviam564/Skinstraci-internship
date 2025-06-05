@@ -47,7 +47,9 @@ const Userinfo = () => {
   return (
     <div className='rombuses'>
       <Link to="/">
-        <Buttonback />
+        <div className="back-button-wrapper">
+          <Buttonback />
+        </div>
       </Link>
       <div className='Rectangle18' />
       <div className='Rectangle10-2' />
@@ -83,7 +85,9 @@ const Userinfo = () => {
             <div>Proceed to the next step</div>
           </div>
           <Link to="/results">
-            <Buttonproceed />
+            <div className='forward-button-wrapper'>
+              <Buttonproceed />
+            </div>
           </Link>
         </>
       )}
