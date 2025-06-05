@@ -4,7 +4,7 @@ import Demographic from '../components/Demographic';
 import Buttonback from '../components/Buttonback';
 import Navbar from '../components/Navbar';
 
-function Picture({ centerContent }) {
+function Picture() {
     const videoRef = useRef(null);
     const canvasRef = useRef(null);
     const navigate = useNavigate();
@@ -45,6 +45,7 @@ function Picture({ centerContent }) {
                 if (result.success) {
                     setDemographicData(result.data);
                     navigate('/select', { state: { demographicData: result.data } });
+                    stopCamera()
                 } else {
                     window.alert(`Analysis failed: ${result.message}`);
                 }
@@ -163,7 +164,7 @@ function Picture({ centerContent }) {
         {!isPreviewing ? (
             <div className='picture'>
                 <Link to='/results'>
-                    <Buttonback />
+                    <Buttonback onClick={stopCamera}/>
                 </Link>
                 <video ref={videoRef} autoPlay playsInline className='w-screen h-screen'/>
                 <div className='takepic-box'>

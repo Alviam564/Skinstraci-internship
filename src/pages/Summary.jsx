@@ -11,27 +11,32 @@ function Summary() {
    return (
     <section id="frame13">
       <Navbar />
-      <div className='Analysis_text'>A. I. Analysis</div>
-      <div className='Demographics_title'>Demographics</div>
-      <div className='Predicted_text'>Predicted Race & Age</div>
+      <div className='selectiontop'>
+        <div className='Analysis_text'>A. I. Analysis</div>
+        <div className='Demographics_title'>Demographics</div>
+        <div className='Predicted_text'>Predicted Race & Age</div>
+      </div>
       <Demographic demographicData={demographicData}/>
-      <Link to="/select">
-        <Buttonback />
-      </Link>
-      <div className='selectionText'>If A.I. estimate is wrong, select the correct one</div>
+      <div className='selectionfooter'>
+        <Link to="/select">
+          <Buttonback />
+        </Link>
+        <div className='selectionText'>If A.I. estimate is wrong, select the correct one</div>
         <Link to="/">
           <div className='Auto_layout_proceed_button-icon-text-shrunk'>
             <div>
-              <div className='Proceed'>Home </div>
+              <div className='Proceed'>Home</div>
             </div>
-            <div className='Rectanglehandler'>
-              <div className='Rectangle16-p' />
-              <div className='Rectangle17-p' />
-              <div className='Rectangle13-p' />
-              <div className='Polygon2-h' />
+            <div className='Rectanglehandlerleft'>
+              <div className='Rectangle16-p'>
+                <div className='Rectangle17-p'> 
+                  <div className='Polygon2-h' />
+                </div>
+              </div>
             </div>
           </div>
         </Link>
+      </div>
     </section>
   )
 }

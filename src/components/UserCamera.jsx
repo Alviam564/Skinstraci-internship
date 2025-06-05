@@ -7,26 +7,32 @@ function UserCamera({ centerContent, showInfo, setShowInfo }) {
     }
 
   return (
-      <>
+    <>
       {centerContent === 'initial' && (
-        <>
-            <div className='Scan'>
-                <div className='rombuses-l'>
-                <div className='Rectangle18-l'></div>
-                <div className='Rectangle10-l'></div>
-                <div className='Rectangle17-l'></div>
-                </div>
+        <div className='Scan'>
+          <div className='rombuses-l'>
+            <div className='img-l'>
+              <img src="/camera.png" alt="" onClick={handleImageClick} style={{ cursor: 'pointer' }} />
             </div>
             <div className='line-l'>
-                <img src="/line_l.png" alt="" />
-            </div>
-            <div className='image-l'>
-                <img src="/camera.png" alt="" onClick={handleImageClick} style={{ cursor: 'pointer' }} />  
-                {showInfo && (
-                <div className='float-info-box'>
-                    <div className='AllowCamera'>
-                        <div className='float-info-text'>Allow A.I. to access your camera</div>
-                        <div className='floatline'></div>
+              <img src="/line_l.png" alt="" />
+              <div className='AccessScantext'>
+                <span>Allow A.I. To scan your face</span>
+              </div>
+            </div> 
+            <div className='Rectangle18-l'/>
+            <div className='Rectangle10-l'/>
+            <div className='Rectangle17-l'/>
+          </div>
+          {showInfo && (
+            <div className='float-info-box'>
+                <div className='AllowCamera'>
+                    <div className='float-info-text'>Allow A.I. to access your camera</div>
+                    <div className='floatline'/>
+                    <div className='yesOrno'>
+                        <div className='Autolayout_no' onClick={() => setShowInfo(false)}>
+                            <div className='Deny'>Deny</div>
+                        </div>
                         <Link to="/camera">
                             <div className='Autolayout_yes'>
                                 <div className='Allow'>
@@ -34,18 +40,12 @@ function UserCamera({ centerContent, showInfo, setShowInfo }) {
                                 </div>
                             </div>
                         </Link>
-                        <div className='Autolayout_no' onClick={() => setShowInfo(false)}>
-                            <div className='Deny'>Deny</div>
-                        </div>
                     </div>
                 </div>
-                )}
             </div>
-            <div className='AccessScantext'>
-                <span>Allow A.I. To scan your face</span>
-            </div>
-        </>
-    )}
+          )}
+        </div>
+      )}
     </>
   )
 }

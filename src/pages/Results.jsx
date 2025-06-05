@@ -61,18 +61,20 @@ function Results() {
     <section id="frame9">
       <Navbar />
       <div className='start_analysis'>To start Analysis</div>
-      <UserCamera showInfo={showInfo} setShowInfo={setShowInfo} centerContent={centerContent}/>
-      <UserGallery centerContent={centerContent} handleFileChange={handleFileChange} dim={showInfo}/>
-      <div className='Preview'>
-        <div className='Preview-text'> Preview </div>
-        <div className='Preview-border'>
-          {preview && <img className='Preview-img' src={preview} alt="Preview" />}
+      <div className='together'>
+        <Link to="/">
+          <Buttonback />
+        </Link>
+        <UserCamera showInfo={showInfo} setShowInfo={setShowInfo} centerContent={centerContent}/>
+        <UserGallery centerContent={centerContent} handleFileChange={handleFileChange} dim={showInfo}/>
+        <div className='Preview'>
+          <div className='Preview-text'> Preview </div>
+          <div className='Preview-border'>
+            {preview && <img className='Preview-img' src={preview} alt="Preview" />}
+          </div>
         </div>
       </div>
       {demographicData && <Demographic demographicData={demographicData} />}
-      <Link to="/">
-        <Buttonback />
-      </Link>
     </section>
   )
 }

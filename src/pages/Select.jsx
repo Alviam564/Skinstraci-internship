@@ -10,50 +10,67 @@ function Select() {
   return (
     <section id="frame12">
       <Navbar />
-      <div>
+      <div className='Analysis_header'>
         <div className='AI_Analysis'>A. I. Analysis</div>
         <div className='AI_text'>A. I. has estimated the following. Fix estimated information if needed. </div>
       </div>
+    <div className='rombuses'>
+      <div className='Rectangle18' />
+      <div className='Rectangle10-2' />
+      <div className='Rectangle17-2' />
       <div className='Analysis'>
-        <div>
-          <Link to='/summary' state={{ demographicData }}>
-            <div className='Demograpghics_option'></div>
-            <span className='Demograpghics_text'>Demograpghics</span>
-          </Link>
-        </div>
-        <div>
-          <div className='Skin_Type_option'></div>
-          <span className='Skin_Type_text'>Skin Type Details</span>
-        </div>
-        <div>
-          <div className='Cosmetic_Concerns_option'></div>
-          <span className='Cosmetic_Concerns_text'>Cosmetic Concerns</span>
-        </div>
-        <div>
-          <div className='Weather_option'></div>
-          <span className='Weather_text'>Weather</span>
-        </div>
-      </div>
-      <div>
-        <Link to="/results">
-          <Buttonback />
-        </Link>
-      </div>
-      <div>
-        <Link to="/summary" state={{ demographicData }}>
-          <div className='Auto_layout_proceed_button-icon-text-shrunk'>
-            <div>
-              <div className='Proceed'>Get Summary</div>
+        <div className='Analysisdiamond'>
+          <div className='AnalysisN diamond-row'>
+            <Link to='/summary' state={{ demographicData }}>
+              <div className='Demograpghics_option diamond'>
+                <span>Demograpghics</span>
+              </div>
+            </Link>
+          </div>
+          <div className='diamond-row horizontal'>
+            <div className='AnalysisW '>
+              <div className='Skin_Type_option diamond'>
+                <span>Skin Type Details</span>
+              </div>
             </div>
-            <div className='Rectanglehandler'>
-              <div className='Rectangle16-p' />
-              <div className='Rectangle17-p' />
-              <div className='Rectangle13-p' />
-              <div className='Polygon2-s' />
+            <div className='AnalysisE'>
+              <div className='Cosmetic_Concerns_option diamond'>
+                <span>Cosmetic Concerns</span>
+              </div>
+          </div>
+            </div>
+          <div className='AnalysisS diamond-row'>
+            <div className='Weather_option diamond'>
+              <span>Weather</span>
             </div>
           </div>
-        </Link>
+        </div>
+        <div className='apart'>
+          <div>
+            <Link to="/results">
+              <Buttonback />
+            </Link>
+          </div>
+          <div>
+
+            <Link to="/summary" state={{ demographicData }}>
+              <div className='Auto_layout_proceed_button-icon-text-shrunk'>
+                <div>
+                  <div className='Proceed'>Get Summary</div>
+                </div>
+                <div className='Rectanglehandlerleft'>
+                  <div className='Rectangle16-p'>
+                    <div className='Rectangle17-p'>
+                      <div className='Polygon2-s' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
       </div>
+    </div>
     </section>
   )
 }
