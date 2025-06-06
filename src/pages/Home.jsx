@@ -15,7 +15,7 @@ useEffect(() => {
   const move = () => {
     skincare.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
     skincare.style.opacity = '1';
-    skincare.style.transform = 'translateX(-250px)';
+    skincare.style.transform = 'translateX(-450px)';
     discoverBlock.style.opacity = '0';
     discoverBlock.style.pointerEvents = 'none';
     discoverboxBlock.style.opacity = '0';
@@ -48,15 +48,15 @@ useEffect(() => {
           <div className='Rectangle10-2 hidden' />
           <div className='Rectangle17-2 hidden' />
           <div className='Rectangle10' />
-          <div className='Auto_layout_button-icon-text-shrunk'>
-            <div className='Rectanglehandlerright'>
-              <div className='Rectangle16-L'>
-                <div className='Rectangle17-L'> 
-                  <div className='Polygon1-L' />
+          <div className='dicover-button-wrapper'>
+            <div className='Auto_layout_button-icon-text-shrunk'>
+              <div className='Rectanglehandlerright'>
+                <div className='Rectangle16-L'>
+                  <div className='Rectangle17-L'> 
+                    <div className='Polygon1-L' />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
               <div className='discoverai'>Discover A.I.</div>
             </div>
           </div>
@@ -67,23 +67,27 @@ useEffect(() => {
           </div>
             <div className='Rectangle2' />
             <Link to ="/testing">
-              <div className='Auto_layout_test_button-icon-text-shrunk'>
-                <div>
-                  <div className='Taketest'>Take Test</div>
-                </div>
-                <div className='Rectanglehandlerleft'>
-                  <div className='Rectangle16-R'>
-                    <div className='Rectangle17-R'>
-                      <div className='Polygon1-R' />
+              <div className='Ttest-button-wrapper'>
+                <div className='Auto_layout_test_button-icon-text-shrunk'>
+                  <div>
+                    <div className='Taketest'>Take Test</div>
+                  </div>
+                  <div className='Rectanglehandlerleft'>
+                    <div className='Rectangle16-R'>
+                      <div className='Rectangle17-R'>
+                        <div className='Polygon1-R' />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </Link>
         </div>
-        <p className='SkinstricP'>
-          Skinstric developed an A.I. that creates a highly-personalised routine tailored to what your skin needs.
-        </p>
+        <div className='Skinstrictext'>
+          <p className='SkinstricP'>
+            Skinstric developed an A.I. that creates a highly-personalised routine tailored to what your skin needs.
+          </p>
+        </div>
       </div>
     </section>
   )

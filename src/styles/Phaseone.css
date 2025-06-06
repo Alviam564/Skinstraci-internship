@@ -13,9 +13,9 @@ a {
 }
 
 .SkinstricP {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: absolute;
+  left: 13%;
+  width: 222px;
   font-weight: 700;
   font-size: 13px;
   line-height: 23px;
@@ -23,12 +23,22 @@ a {
   color: #1A1B1C;
 }
 
+.Skinstrictext {
+  display: flex;
+  align-items: center;
+  text-align: start;
+}
+
+
 .Sophisticated_skincare {
+  display: flex;
+  justify-content: center;
   font-weight: 400;
   font-size: 100px;
   line-height: 120px;
-  text-align: center;
   letter-spacing: -0.07em;
+  width: 1px;
+  text-align: center;
   color: #1A1B1C;
   animation: fadefromup 1.5s ease-out;
 }
@@ -224,6 +234,10 @@ a {
   height: 560px;
 }
 
+#frame1 .rombuses {
+  justify-content: center;
+}
+
 .Rectangle18,
 .Rectangle10-2,
 .Rectangle17-2 {
@@ -242,14 +256,14 @@ a {
 .Rectangle10-2 {
   width: 404.78px;
   height: 420.99px;
-  opacity: 0.6;
+  opacity: 0.9;
   animation-duration: 20s;
 }
 
 .Rectangle17-2 {
   width: 504.78px;
   height: 520.99px;
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 @keyframes spin {
@@ -283,13 +297,7 @@ a {
   color: #1A1B1C;
 }
 
-.yourname {
-  margin-right: 300px;
-  font-size: 50px;
-}
-
-.yourcity {
-  margin-right: 320px;
+.yourname, .yourcity {
   font-size: 45px;
 }
 
@@ -314,18 +322,27 @@ a {
   transition: opacity 0.5s ease;
 }
 
-
 .back-button-wrapper {
-  position: absolute;
-  bottom: 11%;
-  left: 8%;
-  z-index: 10;
+  position: relative;
+  top: 45%;
+  right: 4%;
 }
 
 .forward-button-wrapper {
+  position: relative;
+  top: 45%;
+  left: 4%;
+}
+
+.Ttest-button-wrapper {
   position: absolute;
-  bottom: 11%;
   right: 8%;
+  z-index: 10;
+}
+
+.dicover-button-wrapper {
+  position: absolute;
+  left: 8%;
   z-index: 10;
 }
 
@@ -381,10 +398,6 @@ a {
   color: #1A1B1C;
 }
 
-.Loading {
-  margin-right: 21%;
-}
-
 .Auto_layout_proceed_button-icon-text-shrunk {
   display: flex;
   align-items: center;
@@ -411,12 +424,64 @@ a {
 
 .hidden {
   opacity: 0;
+  pointer-events: none;
+}
+
+  .none {
+    display: none;
+  }
+
+
+@media (max-width: 2560px) {
+
+  .SkinstricP {
+    left: 10%;
+    bottom: 62%;
+  }
+
+  .Rectangle2, .Rectangle10 {
+    width: 652px;
+    height: 652px;
+  }
+  
+  .Rectangle2 {
+    right: -320px;
+  }
+
+  .Rectangle10 {
+    left: -320px;
+  }
+}
+
+@media (max-width: 1920px) {
+
+  .Rectangle2 {
+    right: -370px;
+  }
+
+  .Rectangle10 {
+    left: -370px;
+  }
+}
+@media (max-width: 1600px) {
+  .SkinstricP {
+    left: 7%;
+    bottom: 3% ;
+  }
 }
 
 @media (max-width: 1440px) {
-  .Rectangle10, .Rectangle2 {
-    width: 470px;
-    height: 470px;
+  .SkinstricP {
+    left: 15%;
+    bottom: 30%;
+  }
+
+  .Rectangle2 {
+    right: -370px;
+  }
+
+  .Rectangle10 {
+    left: -370px;
   }
 }
 
@@ -425,12 +490,19 @@ a {
     width: 22%;
   }
 
-  .yourname {
-    margin-right: 155px;
+  .SkinstricP {
+    left: 18%;
+    bottom: 6%;
   }
-  .yourcity {
-    margin-right: 170px;
+
+  .Rectangle2 {
+    right: -510px;
   }
+
+  .Rectangle10 {
+    left: -510px;
+  }
+
 
 }
 
@@ -451,7 +523,6 @@ a {
   }
 
   .SkinstricP {
-    justify-self: center;
     width: 220px;
     line-height: 18px;
     text-align: center;
@@ -476,6 +547,12 @@ a {
   .Rectangle17-L,
   .Polygon1-L {
     display: none;
+  }
+
+  .Ttest-button-wrapper {
+    position: relative;
+    right: 0%;
+    z-index: 10;
   }
 
   .rombuses {
@@ -505,11 +582,6 @@ a {
     border: 2px dashed #A0A4AB;
   }
 
-  .Auto_layout_center_button-icon-text-shrunk,
-  .Auto_layout_test_button-icon-text-shrunk {
-    margin-top: 20px;
-  }
-
   .Taketest {
     font-size: 16px;
     width: auto;
@@ -526,16 +598,17 @@ a {
 
   .yourname,
   .yourcity {
-    margin: 0 auto;
     font-size: 28px;
     line-height: 36px;
-    text-align: center;
-    width: 90%;
   }
 
-  .Line1,
+  .Line1 {
+    width: 70%;
+    margin: 0px auto 10px auto;
+  }
+
   .Line2 {
-    width: 60%;
+    width: 80%;
     margin: 0px auto 10px auto;
   }
 
@@ -558,8 +631,21 @@ a {
     text-align: center;
   }
 
-  .hidden {
+  #frame1 .hidden {
     opacity: 1;
+  }
+
+  #frame6 .forward-button-wrapper {
+    top: 24%;
+    left: 28%;
+  }
+
+  #frame6 .back-button-wrapper {
+    right: 28%;
+  }
+
+   #frame6 .hidden {
+    display: none;
   }
 }
 
@@ -567,6 +653,7 @@ a {
   #frame1, #frame6 {
     padding: 10px;
   }
+
 
   .header1 {
     align-items: center;
@@ -579,11 +666,8 @@ a {
   }
 
   .SkinstricP {
-    justify-self: center;
-    width: 220px;
     line-height: 16px;
     text-align: center;
-    margin-bottom: 10px;
   }
 
   .Sophisticated_skincare {
@@ -648,21 +732,6 @@ a {
     margin: 8px 0;
   }
 
-  .yourname,
-  .yourcity {
-    margin: 0 auto;
-    font-size: 20px;
-    line-height: 28px;
-    width: 90%;
-    text-align: center;
-  }
-
-  .Line1,
-  .Line2 {
-    width: 60%;
-    margin: 0 auto 8px auto;
-  }
-
   .Next,
   .Loading {
     font-size: 18px;
@@ -677,8 +746,8 @@ a {
     text-align: center;
   }
 
-  .Auto_layout_proceed_button-icon-text-shrunk,
-  .Auto_layout_back_button-icon-text-shrunk {
-    font-size: 12px;
+  #frame6 .forward-button-wrapper {
+    top: 27.5%;
   }
+
 }

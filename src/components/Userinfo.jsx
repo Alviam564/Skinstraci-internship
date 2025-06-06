@@ -5,7 +5,7 @@ import Buttonproceed from './Buttonproceed';
 import Buttonback from './Buttonback';
 import { Link } from 'react-router-dom';
 
-const Userinfo = () => {
+const Userinfo = ({ currentStep }) => {
   const [step, setStep] = useState(1);
   const [name, setName] = useState('');
   const [location, setLocation] = useState('');
@@ -46,14 +46,14 @@ const Userinfo = () => {
 
   return (
     <div className='rombuses'>
-      <Link to="/">
-        <div className="back-button-wrapper">
+      <div className="back-button-wrapper">
+        <Link to="/">
           <Buttonback />
-        </div>
-      </Link>
-      <div className='Rectangle18' />
-      <div className='Rectangle10-2' />
-      <div className='Rectangle17-2' />
+        </Link>
+      </div>
+      <div className='Rectangle18'/>
+      <div className='Rectangle10-2'/>
+      <div className='Rectangle17-2'/>
       {!loading && step === 1 && (
         <div className='yourname'>
           <div className='click_to_type1'>Click to type</div>
@@ -84,13 +84,16 @@ const Userinfo = () => {
             <div>Thank you!</div>
             <div>Proceed to the next step</div>
           </div>
-          <Link to="/results">
-            <div className='forward-button-wrapper'>
+          <div className='forward-button-wrapper'>
+            <Link to="/results">
               <Buttonproceed />
-            </div>
-          </Link>
+            </Link>
+          </div>
         </>
       )}
+      <div className={`forward-button-wrapper ${step === 3 ? 'none' : 'hidden'}`}>
+        <Buttonproceed />
+      </div>
     </div>
   );
 };
