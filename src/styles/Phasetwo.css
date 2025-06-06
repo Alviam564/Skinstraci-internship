@@ -333,6 +333,10 @@
   gap: 200px;
 }
 
+#frame9 .back-button-wrapper {
+  right: 0;
+}
+
 .selectiontop {
   display: flex;
   flex-direction: column;
@@ -408,8 +412,8 @@
 .selected.race_results,
 .selected.age_results,
 .selected.gender_results {
-background-color: #1A1B1C;
-color: white;
+  background-color: #1A1B1C;
+  color: white;
 }
 
 .Demographics_rectangle_results {
@@ -560,6 +564,7 @@ color: white;
 .selectionfooter {
   margin-bottom: 5px;
 }
+
 @media (max-width: 1440px) {
   #frame9 .back-button-wrapper {
     right: 0;

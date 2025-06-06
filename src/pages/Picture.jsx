@@ -163,11 +163,9 @@ function Picture() {
         <Navbar />
         {!isPreviewing ? (
             <div className='picture'>
-                <div className='back-button-wrapper'>
-                    <Link to='/results'>
-                        <Buttonback onClick={stopCamera}/>
-                    </Link>
-                </div>
+                <Link to='/results'>
+                    <Buttonback onClick={stopCamera}/>
+                </Link>
                 <video ref={videoRef} autoPlay playsInline className='w-screen h-screen'/>
                 <div className='takepic-box'>
                     <span className='takepic-text'>Take Picture</span>
