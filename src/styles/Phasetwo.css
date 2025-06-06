@@ -564,6 +564,9 @@
   #frame9 .back-button-wrapper {
     right: 0;
   }
+  .Demographics_rectangle_box {
+    width: 639px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -573,6 +576,11 @@
 
   .AccessScantext, .AccessGallerytext {
     width: 73px;
+  }
+
+  .selectiontop {
+    align-items: center;
+    margin-left: 0;
   }
 
   .progress-ring {
