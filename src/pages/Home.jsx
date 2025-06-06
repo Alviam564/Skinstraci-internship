@@ -83,7 +83,7 @@ useEffect(() => {
               </div>
             </Link>
         </div>
-        <div className='Skinstrictext'>
+        <div className='forward-button-wrapper'>
           <p className='SkinstricP'>
             Skinstric developed an A.I. that creates a highly-personalised routine tailored to what your skin needs.
           </p>

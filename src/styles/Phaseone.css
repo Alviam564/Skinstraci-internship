@@ -13,20 +13,12 @@ a {
 }
 
 .SkinstricP {
-  position: absolute;
-  left: 13%;
   width: 222px;
   font-weight: 700;
   font-size: 13px;
   line-height: 23px;
   text-transform: uppercase;
   color: #1A1B1C;
-}
-
-.Skinstrictext {
-  display: flex;
-  align-items: center;
-  text-align: start;
 }
 
 
@@ -334,6 +326,10 @@ a {
   left: 4%;
 }
 
+#frame1 .forward-button-wrapper {
+  left: 6%;
+}
+
 .Ttest-button-wrapper {
   position: absolute;
   right: 8%;
@@ -427,17 +423,12 @@ a {
   pointer-events: none;
 }
 
-  .none {
-    display: none;
-  }
+.none {
+  display: none;
+}
 
 
 @media (max-width: 2560px) {
-
-  .SkinstricP {
-    left: 10%;
-    bottom: 62%;
-  }
 
   .Rectangle2, .Rectangle10 {
     width: 652px;
@@ -463,19 +454,8 @@ a {
     left: -370px;
   }
 }
-@media (max-width: 1600px) {
-  .SkinstricP {
-    left: 7%;
-    bottom: 3% ;
-  }
-}
 
 @media (max-width: 1440px) {
-  .SkinstricP {
-    left: 15%;
-    bottom: 30%;
-  }
-
   .Rectangle2 {
     right: -370px;
   }
@@ -490,11 +470,6 @@ a {
     width: 22%;
   }
 
-  .SkinstricP {
-    left: 18%;
-    bottom: 6%;
-  }
-
   .Rectangle2 {
     right: -510px;
   }
@@ -503,13 +478,13 @@ a {
     left: -510px;
   }
 
-
 }
 
 @media (max-width: 768px) {
   #frame1, #frame6 {
     padding: 20px;
   }
+
 
   .header1 {
     align-items: center;
@@ -523,9 +498,12 @@ a {
   }
 
   .SkinstricP {
-    width: 220px;
     line-height: 18px;
     text-align: center;
+  }
+
+  #frame1 .forward-button-wrapper {
+    left: 35%;
   }
 
   .Sophisticated_skincare {
@@ -749,5 +727,9 @@ a {
   #frame6 .forward-button-wrapper {
     top: 27.5%;
   }
+  #frame1 .forward-button-wrapper {
+  left: 19%;
+}
+
 
 }
