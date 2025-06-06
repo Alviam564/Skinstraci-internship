@@ -25,14 +25,14 @@ function Select() {
         </div>
         <div className='Analysis'>
           <div className='Analysisdiamond'>
-            <div className='AnalysisN diamond-row'>
+            <div className='AnalysisN diamond-horizontal'>
               <Link to='/summary' state={{ demographicData }}>
                 <div className='Demograpghics_option diamond'>
                   <span>Demograpghics</span>
                 </div>
               </Link>
             </div>
-            <div className='diamond-row horizontal'>
+            <div className='diamond-row'>
               <div className='AnalysisW '>
                 <div className='Skin_Type_option diamond'>
                   <span>Skin Type Details</span>
@@ -42,9 +42,9 @@ function Select() {
                 <div className='Cosmetic_Concerns_option diamond'>
                   <span>Cosmetic Concerns</span>
                 </div>
-            </div>
               </div>
-            <div className='AnalysisS diamond-row'>
+            </div>
+            <div className='AnalysisS diamond-horizontal'>
               <div className='Weather_option diamond'>
                 <span>Weather</span>
               </div>

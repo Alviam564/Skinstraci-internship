@@ -194,42 +194,25 @@
   align-items: center;
   justify-content: space-evenly;
   height: 550px;
+  position: relative;
+  left: 1%;
 }
 
-.Demograpghics_option, .Skin_Type_option {
+.Demograpghics_option, .Skin_Type_option,
+.Cosmetic_Concerns_option, .Weather_option {
   display: flex;
-  width: 143px;
-  height: 143px;
-  background: #D2D2D2;
-  border: black 1px solid;
-}
-
-.Cosmetic_Concerns_option {
-  display: flex;
-  width: 143px;
-  height: 143px;
-  background: #D2D2D2;
-  border: black 1px solid;
-}
-
-.Weather_option {
-  display: flex;
-  width: 143px;
-  height: 143px;
-  background: #D2D2D2;
-  border: black 1px solid;
+  width: 120px;
+  height: 120px;
+  background: #F3F3F4;
 }
 
 .Analysisdiamond {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-top: 40px;
 }
 
 .diamond {
-  background-color: #e0e0e0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -243,7 +226,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 80px;
+  gap: 65px;
+}
+
+.diamond-horizontal {
+  position: relative;
 }
 
 .diamond span {
@@ -254,13 +241,17 @@
 .AnalysisN {
   animation: flyInTop 0.8s ease-out forwards;
   transform: rotate(-45deg);
+  top: 8%;
+}
 
+.AnalysisN :hover{
+  background-color: #E1E1E2;
 }
 
 .AnalysisW {
   animation: flyInLeft 0.8s ease-out forwards;
   transform: rotate(-45deg);
-
+  
 }
 
 .AnalysisE {
@@ -271,7 +262,7 @@
 .AnalysisS {
   animation: flyInBottom 0.8s ease-out forwards;
   transform: rotate(-45deg);
-
+  bottom: 8%;
 }
 
 @keyframes flyInTop {
@@ -326,6 +317,10 @@
 .Weather_option, .Skin_Type_text, .Cosmetic_Concerns_text,
 .Weather_text{
   cursor: not-allowed;
+}
+
+#frame12 .proceed {
+  font-size: 0px;
 }
 
 .apart {
@@ -425,7 +420,7 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  width: 900px;
+  width: 760px;
   background: #F3F3F4;
   border-top: 1px solid #1A1B1C;
 }
@@ -569,9 +564,6 @@
   #frame9 .back-button-wrapper {
     right: 0;
   }
-  .Demographics_rectangle_box {
-    width: 690px;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -631,6 +623,9 @@
     left: 30%;
   }
 
+  .Analysis {
+    left: 0;
+  }
 
 }
 
@@ -661,6 +656,15 @@
 
   .Analysisdiamond {
     gap: 65px;
+    margin-top: 40px;
+  }
+
+  .AnalysisN {
+    top: 0%;
+  }
+
+  .AnalysisS {
+    bottom: 0%;
   }
 
   #frame12 .Rectangle18,
