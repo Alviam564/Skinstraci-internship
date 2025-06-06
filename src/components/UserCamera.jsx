@@ -31,12 +31,12 @@ function UserCamera({ centerContent, showInfo, setShowInfo }) {
                     <div className='floatline'/>
                     <div className='yesOrno'>
                         <div className='Autolayout_no' onClick={() => setShowInfo(false)}>
-                            <div className='Deny'>Deny</div>
+                          <div className='Deny'>Deny</div>
                         </div>
                         <Link to="/camera">
                             <div className='Autolayout_yes'>
                                 <div className='Allow'>
-                                    Allow
+                                  Allow
                                 </div>
                             </div>
                         </Link>

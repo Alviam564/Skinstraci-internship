@@ -138,7 +138,7 @@
   opacity: 1;
 }
 
-.picture, .selectionfooter, .selectiontop {
+.picture, .selectionfooter {
   display: flex;
   align-items: center;
   justify-content: space-evenly;

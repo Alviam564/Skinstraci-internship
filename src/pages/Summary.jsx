@@ -18,14 +18,14 @@ function Summary() {
       </div>
       <Demographic demographicData={demographicData}/>
       <div className='selectionfooter'>
-        <Link to="/select">
-          <div className='back-button-wrapper'>
+        <div className='back-button-wrapper'>
+          <Link to="/select">
             <Buttonback />
-          </div>
-        </Link>
+          </Link>
+        </div>
         <div className='selectionText'>If A.I. estimate is wrong, select the correct one</div>
-        <Link to="/">
-          <div className='forward-button-wrapper'>
+        <div className='forward-button-wrapper'>
+          <Link to="/">
             <div className='Auto_layout_proceed_button-icon-text-shrunk'>
               <div>
                 <div className='Proceed'>Home</div>
@@ -38,8 +38,8 @@ function Summary() {
                 </div>
               </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
     </section>
   )

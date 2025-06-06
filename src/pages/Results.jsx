@@ -62,11 +62,11 @@ function Results() {
       <Navbar />
       <div className='start_analysis'>To start Analysis</div>
       <div className='together'>
+      <div className='back-button-wrapper'>
         <Link to="/">
-          <div className='back-button-wrapper'>
-            <Buttonback />
-          </div>
+          <Buttonback />
         </Link>
+      </div>
         <UserCamera showInfo={showInfo} setShowInfo={setShowInfo} centerContent={centerContent}/>
         <UserGallery centerContent={centerContent} handleFileChange={handleFileChange} dim={showInfo}/>
         <div className='Preview'>

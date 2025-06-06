@@ -5,7 +5,7 @@ import Buttonproceed from './Buttonproceed';
 import Buttonback from './Buttonback';
 import { Link } from 'react-router-dom';
 
-const Userinfo = ({ currentStep }) => {
+const Userinfo = () => {
   const [step, setStep] = useState(1);
   const [name, setName] = useState('');
   const [location, setLocation] = useState('');

@@ -14,6 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  height: 560px;
 }
 
 .Scan, .Gallery {
@@ -110,9 +111,9 @@
   height: 560px;
 }
 
-
 .Preview {
-  margin-bottom: 30%;
+  position: relative;
+  bottom: 30%;
 }
 
 .Preview-text {
@@ -329,8 +330,14 @@
 
 .apart {
   display: flex;
-  align-items: center;
   gap: 200px;
+}
+
+.selectiontop {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 8%;
 }
 
 .Analysis_text {
@@ -414,7 +421,7 @@ color: white;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  width: 690px;
+  width: 900px;
   background: #F3F3F4;
   border-top: 1px solid #1A1B1C;
 }
@@ -553,6 +560,14 @@ color: white;
 .selectionfooter {
   margin-bottom: 5px;
 }
+@media (max-width: 1440px) {
+  #frame9 .back-button-wrapper {
+    right: 0;
+  }
+  .Demographics_rectangle_box {
+    width: 690px;
+  }
+}
 
 @media (max-width: 1024px) {
   .float-info-box {
@@ -587,14 +602,31 @@ color: white;
 
 @media (max-width: 768px) {
   .Preview {
-    position: absolute;
-    margin-bottom: 50%;
+    bottom: 35%;
+    right: 47%;
   }
   
   .selectionfooter, .selectiontop {
     flex-direction: column;
     gap: 10px;
   }
+
+  #frame9 .back-button-wrapper {
+    top: 40%;
+    left: 45%;
+  }
+
+  #frame12 .back-button-wrapper {
+    top: 110%;
+    right: 30%;
+  }
+
+  #frame12 .forward-button-wrapper {
+    top: 14%;
+    left: 30%;
+  }
+
+
 }
 
 @media (max-width: 425px) {
@@ -623,7 +655,13 @@ color: white;
   }
 
   .Analysisdiamond {
-    gap: 70px;
+    gap: 65px;
+  }
+
+  #frame12 .Rectangle18,
+  #frame12 .Rectangle10-2,
+  #frame12 .Rectangle17-2 {
+    display: none;
   }
 
   .apart {
@@ -649,7 +687,21 @@ color: white;
   .Demographics_rectangle_results {
     justify-content: center;
   }
+  
+  #frame9 .back-button-wrapper {
+    top: 0;
+    left: 0;
+  }
+  
+  #frame12 .back-button-wrapper {
+    top: 175%;
+  }
 
+  #frame12 .forward-button-wrapper {
+    top: 67.5%;
+    left: 24%;
+  }
+  
 }
 
 @media (max-width: 320px) {
@@ -660,14 +712,14 @@ color: white;
   .AccessGallerytext {
     display: contents;
   }
+
   .apart {
     gap: 50px;
   }
-   .Demographics_title {
+
+  .Demographics_title {
     font-size: 40px;
   }
-  #frame12 .forward-button-wrapper {
-    right: 3%;
-  }
+
 
 }
