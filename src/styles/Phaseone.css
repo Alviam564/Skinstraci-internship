@@ -331,11 +331,14 @@ a {
 
 .Ttest-button-wrapper {
   position: relative;
+  top: 2%;
+  left: 450%;
   z-index: 10;
 }
 
 .dicover-button-wrapper {
   position: relative;
+  right: 38%;
   z-index: 10;
 }
 

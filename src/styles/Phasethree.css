@@ -167,14 +167,15 @@
   opacity: 0.8;
 }
 
-.w-screen{
-  width: 100vw;
+video {
+  width: 100%;
+  height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
+#frame16 img {
+  width: 100%;
+  height: 100%;
 }
-
 
 .Shot {
   display: flex;
@@ -195,10 +196,8 @@
 }
 
 .useShot, .tryAgain{
-  gap: 8px;
-  position: relative;
+  position: absolute;
   margin-top: 16px;
-  justify-content: center
 }
 
 .useShot {
@@ -206,8 +205,11 @@
   height: 40px;
   padding: 9px 16px 10px;
   background: #1A1B1C;
-  border:1px solid #FFFFFF;
+  border: 1px solid #FFFFFF;
   cursor: pointer;
+  right: 20%;
+  bottom: 1%;
+
 }
 
 .tryAgain {
@@ -215,6 +217,8 @@
   height: 40px;
   padding: 10px 16px;
   background: #FFFFFF;
+  left: 20%;
+  bottom: 1%;
 }
 
 .Shots, .Shotr{
@@ -256,6 +260,14 @@
   .camerainfo {
     margin-bottom: 30px;
   }
+
+  .useShot {
+    bottom: 16%;
+  }
+
+  .tryAgain {
+    bottom: 16%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -267,7 +279,6 @@
     font-size: 19px;
   }
 
-
   .Shots, .Shotr {
     text-align: center;
   }
@@ -275,6 +286,14 @@
   .loader-screen {
     font-size: 20px;
     padding: 20px;
+  }
+
+  .useShot {
+    bottom: 35%;
+  }
+
+  .tryAgain {
+    bottom: 35%;
   }
 }
 
@@ -309,10 +328,6 @@
     font-size: 16px;
   }
 
-  video {
-    transform: rotate(90deg);
-  }
-
   .picture {
     align-items:flex-start;
   }
@@ -325,12 +340,6 @@
     top: 140px;
   }
 
-  .useShot,
-  .tryAgain {
-    width: 100%;
-    height: 38px;
-  }
-
   .Shots, .Shotr {
     font-size: 12px;
   }
@@ -339,9 +348,25 @@
     font-size: 18px;
     padding: 15px;
   }
+
+  .useShot {
+    bottom: 58%;
+  }
+
+  .tryAgain {
+    bottom: 58%;
+  }
 }
 @media (max-width: 320px) {
    .float-info-box {
     margin-right: 46%;
+  }
+
+  .useShot {
+    bottom: 65%;
+  }
+
+  .tryAgain {
+    bottom: 65%;
   }
 }

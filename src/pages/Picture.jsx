@@ -166,7 +166,7 @@ function Picture() {
                 <Link to='/results'>
                     <Buttonback onClick={stopCamera}/>
                 </Link>
-                <video ref={videoRef} autoPlay playsInline className='w-screen h-screen'/>
+                <video ref={videoRef} autoPlay playsInline/>
                 <div className='takepic-box'>
                     <span className='takepic-text'>Take Picture</span>
                     <div className='takepic-button'>
@@ -178,10 +178,7 @@ function Picture() {
             <div>
                 <div className='Shot'>
                     <div className='Shotg'>Great Shot!</div>
-                    <img src={captured} alt="Captured" className='w-screen h-screen'/>
-                </div>
-                <div className='Shot'>
-                    <div className='Shotp'>Preview</div>
+                    <img src={captured} alt="Captured"/>
                     <button onClick={handleRetake} className='tryAgain'>
                         <p className='Shotr'>Retake</p>
                     </button>
