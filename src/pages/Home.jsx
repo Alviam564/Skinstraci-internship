@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function Home() {
 
 useEffect(() => {
-  const testBtn = document.querySelector('.Taketest');
+  const testBtn = document.querySelector('.Ttest-button-wrapper');
   const skincare = document.querySelector('.Sophisticated_skincare');
   const discoverBlock = document.querySelector('.Auto_layout_button-icon-text-shrunk');
   const discoverboxBlock = document.querySelector('.Rectangle10');
@@ -13,7 +13,7 @@ useEffect(() => {
   if (!testBtn || !skincare || !discoverBlock || !discoverboxBlock) return;
 
   const move = () => {
-    skincare.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
+    skincare.style.transition = 'transform 1s ease, opacity 0.5s ease';
     skincare.style.opacity = '1';
     skincare.style.transform = 'translateX(-450px)';
     discoverBlock.style.opacity = '0';
