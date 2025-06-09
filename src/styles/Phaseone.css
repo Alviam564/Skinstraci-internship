@@ -13,7 +13,7 @@ a {
 }
 
 .SkinstricP {
-  width: 222px;
+  width: 300px;
   font-weight: 700;
   font-size: 13px;
   line-height: 23px;
@@ -319,7 +319,6 @@ a {
   right: 4%;
 }
 
-
 .forward-button-wrapper {
   position: relative;
   top: 45%;
@@ -331,14 +330,12 @@ a {
 }
 
 .Ttest-button-wrapper {
-  position: absolute;
-  right: 8%;
+  position: relative;
   z-index: 10;
 }
 
 .dicover-button-wrapper {
-  position: absolute;
-  left: 8%;
+  position: relative;
   z-index: 10;
 }
 
@@ -430,38 +427,44 @@ a {
 
 @media (max-width: 2560px) {
 
-  .Rectangle2, .Rectangle10 {
-    width: 652px;
-    height: 652px;
-  }
-  
   .Rectangle2 {
-    right: -320px;
+    right: -450px;
   }
 
   .Rectangle10 {
-    left: -320px;
+    left: -420px;
+  }
+
+  .Ttest-button-wrapper {
+    top: 2%;
+    left: 780%;
+  }
+
+  .dicover-button-wrapper {
+    right: 42%;
   }
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1600px) {
 
-  .Rectangle2 {
-    right: -370px;
+  .Ttest-button-wrapper {
+    top: 2%;
+    left: 450%;
   }
 
-  .Rectangle10 {
-    left: -370px;
+  .dicover-button-wrapper {
+    right: 38%;
   }
 }
 
 @media (max-width: 1440px) {
-  .Rectangle2 {
-    right: -370px;
+  .Ttest-button-wrapper {
+    top: 2%;
+    left: 390%;
   }
 
-  .Rectangle10 {
-    left: -370px;
+  .dicover-button-wrapper {
+    right: 37%;
   }
 }
 
@@ -470,12 +473,21 @@ a {
     width: 22%;
   }
 
-  .Rectangle2 {
-    right: -510px;
+  .Rectangle10 {
+    left: -490px;
   }
 
-  .Rectangle10 {
-    left: -510px;
+  .Rectangle2 {
+    right: -500;
+  }
+
+  .Ttest-button-wrapper {
+    top: 2%;
+    left: 230%;
+  }
+
+  .dicover-button-wrapper {
+    right: 32%;
   }
 
 }
@@ -528,9 +540,7 @@ a {
   }
 
   .Ttest-button-wrapper {
-    position: relative;
-    right: 0%;
-    z-index: 10;
+    left: 0;
   }
 
   .rombuses {
