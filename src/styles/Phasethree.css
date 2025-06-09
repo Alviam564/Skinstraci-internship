@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+#frame16 body, html {
+  overflow-y: hidden;
+}
+
 #frame15 {
   background: #FFFFFF;
 }
@@ -169,10 +173,10 @@
 
 video {
   width: 100%;
-  height: 100%;
+  height: 115.5vh;
 }
 
-#frame16 img {
+#frame16 img{
   width: 100%;
   height: 100%;
 }
@@ -185,6 +189,7 @@ video {
 
 .Shotg {
   position: absolute;
+  color: gray;
   top: 15%;
   font-weight: 400;
   font-size: 40px !important;
@@ -357,6 +362,7 @@ video {
     bottom: 58%;
   }
 }
+
 @media (max-width: 320px) {
    .float-info-box {
     margin-right: 46%;

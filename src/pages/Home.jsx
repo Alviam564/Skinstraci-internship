@@ -66,8 +66,8 @@ useEffect(() => {
             </div>
           </div>
             <div className='Rectangle2' />
-            <Link to ="/testing">
-              <div className='Ttest-button-wrapper'>
+            <div className='Ttest-button-wrapper'>
+              <Link to ="/testing">
                 <div className='Auto_layout_test_button-icon-text-shrunk'>
                   <div>
                     <div className='Taketest'>Take Test</div>
@@ -80,8 +80,8 @@ useEffect(() => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
         </div>
         <div className='forward-button-wrapper'>
           <p className='SkinstricP'>

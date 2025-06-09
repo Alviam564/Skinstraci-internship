@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Demographic from '../components/Demographic';
 import Buttonback from '../components/Buttonback';
-import Navbar from '../components/Navbar';
 
 function Picture() {
     const videoRef = useRef(null);
@@ -160,7 +159,6 @@ function Picture() {
 
   return (
     <section id="frame16">
-        <Navbar />
         {!isPreviewing ? (
             <div className='picture'>
                 <Link to='/results'>
@@ -170,7 +168,7 @@ function Picture() {
                 <div className='takepic-box'>
                     <span className='takepic-text'>Take Picture</span>
                     <div className='takepic-button'>
-                        <img onClick={captureImage} style={{ cursor: 'pointer' }} src="/CameraB.png" alt="CameraB" />
+                        <img onClick={captureImage} style={{ cursor: 'pointer' }} src="/CameraB.png" alt="CameraB" className="realp"/>
                     </div>
                 </div>
             </div>
@@ -178,7 +176,7 @@ function Picture() {
             <div>
                 <div className='Shot'>
                     <div className='Shotg'>Great Shot!</div>
-                    <img src={captured} alt="Captured"/>
+                    <img src={captured} alt="Captured" className="realp"/>
                     <button onClick={handleRetake} className='tryAgain'>
                         <p className='Shotr'>Retake</p>
                     </button>
